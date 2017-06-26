@@ -1,0 +1,56 @@
+<!--ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ siteName }}</ion-title>
+  </ion-navbar>
+</ion-header-->
+
+<!-- display page content -->
+<ion-content padding>
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="../../assets/img/cedar_view.png" class="homeSlide_imgs" ></div>
+      <div class="swiper-slide"><img src="../../assets/img/Hip-Hop-News-1024x386.jpg" class="homeSlide_imgs" ></div>
+      <div class="swiper-slide"><img src="../../assets/img/homeSlide_5.png" class="homeSlide_imgs" ></div>
+      <div class="swiper-slide"><img src="../../assets/img/logo_url_black_bkground_2500_x_1152.png" class="homeSlide_imgs" ></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+</ion-content>
+
+<script>
+
+  $(document).ready(function () {
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: '.swiper-pagination',
+
+      // Navigation arrows
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+
+      // And if we need scrollbar
+      scrollbar: '.swiper-scrollbar'
+    })
+  });
+
+</script>
