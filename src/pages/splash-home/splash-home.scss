@@ -2,7 +2,7 @@ page-splash-home {
 
   .appWrapper{
     width: 100%;
-    background-color: #000;
+    background-color: $background-color;
   }
 
   ion-footer ion-icon{
@@ -27,7 +27,7 @@ page-splash-home {
       width: 35%;
       margin: 0 auto 0;
       font-size: 16px;
-      color: #FFFFFF;
+      color: #545454;
       text-align: center;
     }
   }

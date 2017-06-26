@@ -23,7 +23,7 @@ export class MyApp {
 
   rootPage: any = SplashHomePage; // by default any is = HomePage; - using LoginPage for Authenticating p
   loader: any;
-  siteName = 'HGM Radio';
+  siteName = 'Burgin Construction';
   appVersion = 'v1.2';
   pushHomePage = HomePage;
 

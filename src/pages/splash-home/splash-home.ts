@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SplashHomePage {
 
-  siteName = 'HGM Radio';
+  siteName = 'Burging Construction LLC Quick Quote';
   appVersion = 'v1.2';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
