@@ -32,12 +32,12 @@ export class Quotes {
 
   }
 
-  createQuotes(review){
+  createQuotes(quote){
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
-    this.http.post('http://localhost:8080/api/quotes', JSON.stringify(review), {headers: headers})
+    this.http.post('http://localhost:8080/api/quotes', JSON.stringify(quote), {headers: headers})
       .subscribe(res => {
         console.log(res.json());
       });
