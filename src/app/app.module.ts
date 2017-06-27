@@ -22,8 +22,12 @@ import { ProductsPage } from "../pages/products/products";
 import { ServicesPage } from "../pages/services/services";
 import { TermsAndConditionsPage } from "../pages/terms-and-conditions/terms-and-conditions";
 import { BlogPage } from "../pages/blog/blog";
-import { AuthProvider } from '../providers/auth/auth';
 import { SplashHomePage } from "../pages/splash-home/splash-home";
+import { QuotePage } from "../pages/quotes/quotes";
+
+import { AuthProvider } from '../providers/auth/auth';
+import { QuotesProvider } from '../providers/quotes/quotes';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +48,7 @@ import { SplashHomePage } from "../pages/splash-home/splash-home";
     TermsAndConditionsPage,
     BlogPage,
     SplashHomePage,
+    QuotePage,
   ],
   imports: [
     BrowserModule,
@@ -69,12 +74,14 @@ import { SplashHomePage } from "../pages/splash-home/splash-home";
     TermsAndConditionsPage,
     BlogPage,
     SplashHomePage,
+    QuotePage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
+    QuotesProvider,
   ]
 })
 export class AppModule {}

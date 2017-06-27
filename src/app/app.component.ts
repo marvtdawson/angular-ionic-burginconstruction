@@ -13,6 +13,7 @@ import { LoginPage } from "../pages/login/login";
 import { RegisterPage } from "../pages/register/register";
 import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { AuthProvider } from "../providers/auth/auth";
+import { QuotePage } from "../pages/quotes/quotes";
 
 
 @Component({
@@ -46,6 +47,7 @@ export class MyApp {
       {title: 'Contact Us', component: ContactUsPage},
       {title: 'Sign Up', component: RegisterPage},
       {title: 'Member Login', component: LoginPage},
+      {title: 'Quote', component: QuotePage}
     ];
 
     this.presentLoading();

@@ -6,7 +6,7 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class Quotes {
+export class QuotesProvider {
 
   data: any;
 

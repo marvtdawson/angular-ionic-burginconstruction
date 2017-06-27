@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { NavController, ModalController } from 'ionic-angular';
 import { AddQuotesPage } from '../add-quotes/add-quotes';
-import { Quotes } from '../../providers/quotes/quotes';
+import { QuotesProvider } from '../../providers/quotes/quotes';
 
 @Component({
   selector: 'quotes',
@@ -12,7 +12,7 @@ export class QuotePage {
   quotes: any;
 
   constructor(public nav: NavController,
-              public quoteService: Quotes,
+              public quoteService: QuotesProvider,
               public modalCtrl: ModalController) {
 
   }
