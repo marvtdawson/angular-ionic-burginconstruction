@@ -11,7 +11,7 @@ import { NgForm } from "@angular/forms";
 export class LoginPage{
   constructor(){}
   pageTitle = 'Member Login';
-  siteName = 'Who\'s Laundry';
+  siteName = 'Burgin Construction LLC';
   pushForgotPasswordPage = ForgotPasswordPage;
   pushRegisterPage = RegisterPage;
 

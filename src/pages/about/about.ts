@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ContactUsPage} from '../../pages/contact-us/contact-us';
+import {NavController} from "ionic-angular";
 
 @Component({
   selector: 'about',
@@ -7,9 +8,9 @@ import { ContactUsPage} from '../../pages/contact-us/contact-us';
 })
 
 export class AboutPage {
-  constructor() {}
+  constructor(public navCtrl: NavController) {}
   pageTitle = 'About';
   contactus = './contact-us.html';
   pushContactPage = ContactUsPage;
-  siteName = 'Who\'s Laundry';
+  siteName = 'Burgin Construction';
 }

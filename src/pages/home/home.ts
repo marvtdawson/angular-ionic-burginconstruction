@@ -18,5 +18,5 @@ export class HomePage {
   }
 
   pageTitle = 'Home';
-  siteName = "Who\'s Laundry";
+  siteName = "Burgin Construction";
 }

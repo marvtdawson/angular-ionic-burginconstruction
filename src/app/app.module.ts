@@ -74,7 +74,7 @@ import { SplashHomePage } from "../pages/splash-home/splash-home";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider,
   ]
 })
 export class AppModule {}

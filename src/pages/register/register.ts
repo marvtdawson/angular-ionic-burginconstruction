@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginPage } from '../../pages/login/login';
+import { IonicStorageModule } from '@ionic/storage';
 
 @Component({
   selector: 'register',

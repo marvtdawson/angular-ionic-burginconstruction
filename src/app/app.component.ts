@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 
 
 import { HomePage } from '../pages/home/home';
-//import { ListPage } from '../pages/list/list';
+import { ListPage } from '../pages/list/list';
 import { AboutPage } from "../pages/about/about";
 import { ContactUsPage } from "../pages/contact-us/contact-us";
 import { LoginPage } from "../pages/login/login";
@@ -42,7 +42,7 @@ export class MyApp {
     this.pages = [
       {title: 'Home', component: HomePage},
       {title: 'About', component: AboutPage},
-      //{ title: 'List', component: ListPage },
+      {title: 'List', component: ListPage},
       {title: 'Contact Us', component: ContactUsPage},
       {title: 'Sign Up', component: RegisterPage},
       {title: 'Member Login', component: LoginPage},
