@@ -27,6 +27,7 @@ import { QuotePage } from "../pages/quotes/quotes";
 
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
+import {AddQuotesPage} from "../pages/add-quotes/add-quotes";
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { QuotesProvider } from '../providers/quotes/quotes';
     BlogPage,
     SplashHomePage,
     QuotePage,
+    AddQuotesPage,
   ],
   imports: [
     BrowserModule,
@@ -75,6 +77,7 @@ import { QuotesProvider } from '../providers/quotes/quotes';
     BlogPage,
     SplashHomePage,
     QuotePage,
+    AddQuotesPage,
   ],
   providers: [
     StatusBar,

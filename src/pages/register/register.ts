@@ -11,7 +11,7 @@ export class RegisterPage{
 
   constructor(){}
   pageTitle = 'Sign Up';
-  siteName = 'Who\'s Laundry';
+  siteName = 'Burgin Construction';
   pushLoginPage = LoginPage;
 
   //currRegMemEmail = localStorage.setItem('regUserEmail', 'marvintdawson@gmail.com');

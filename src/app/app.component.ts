@@ -6,11 +6,11 @@ import { HttpModule } from '@angular/http';
 
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+//import { ListPage } from '../pages/list/list';
 import { AboutPage } from "../pages/about/about";
 import { ContactUsPage } from "../pages/contact-us/contact-us";
 import { LoginPage } from "../pages/login/login";
-import { RegisterPage } from "../pages/register/register";
+//import { RegisterPage } from "../pages/register/register";
 import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { AuthProvider } from "../providers/auth/auth";
 import { QuotePage } from "../pages/quotes/quotes";
@@ -43,11 +43,11 @@ export class MyApp {
     this.pages = [
       {title: 'Home', component: HomePage},
       {title: 'About', component: AboutPage},
-      {title: 'List', component: ListPage},
+      {title: 'Request Quote', component: QuotePage},
+      {title: 'Login', component: LoginPage},
+      //{title: 'List', component: ListPage},
       {title: 'Contact Us', component: ContactUsPage},
-      {title: 'Sign Up', component: RegisterPage},
-      {title: 'Member Login', component: LoginPage},
-      {title: 'Quote', component: QuotePage}
+      //{title: 'Sign Up', component: RegisterPage},
     ];
 
     this.presentLoading();

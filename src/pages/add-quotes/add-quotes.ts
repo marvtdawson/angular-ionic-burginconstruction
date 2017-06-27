@@ -15,6 +15,8 @@ export class AddQuotesPage {
 
   }
 
+  siteName = 'Burgin Construction LLC';
+
   save(): void {
 
     let quote = {

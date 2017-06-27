@@ -1,7 +1,9 @@
 .page-content-top {
-  border: none; }
+  border: none;
+  margin: 0 auto 0;
+  width: 100%; }
   .page-content-top p {
-    font-size: 18px; }
+    font-size: 16px; }
 
 .form-button-wrapper {
   margin-top: 20px; }

@@ -10,13 +10,13 @@ import { QuotesProvider } from '../../providers/quotes/quotes';
 export class QuotePage {
 
   quotes: any;
+  siteName = 'Burgin Construction LLC';
 
   constructor(public nav: NavController,
               public quoteService: QuotesProvider,
               public modalCtrl: ModalController) {
 
   }
-
   ionViewDidLoad(){
 
     this.quoteService.getQuotes().then((data) => {
