@@ -15,33 +15,37 @@
     </p>
   </div>
 
-  <ion-list inset>
+  <form>
 
-    <ion-item>
-      <ion-label floating>Customer Name</ion-label>
-      <ion-input [(ngModel)]="title" type="text"></ion-input>
-    </ion-item>
+    <ion-list inset>
 
-    <ion-item>
-      <ion-label floating>Project Title</ion-label>
-      <ion-input [(ngModel)]="title" type="text"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>Customer Name</ion-label>
+        <ion-input [(ngModel)]="title" type="text"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label floating>Project Type</ion-label>
-      <ion-input [(ngModel)]="title" type="text"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>Project Title</ion-label>
+        <ion-input [(ngModel)]="title" type="text"></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label floating>Extra Project Notes</ion-label>
-      <ion-textarea [(ngModel)]="description"></ion-textarea>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>Project Type</ion-label>
+        <ion-input [(ngModel)]="title" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Extra Project Notes</ion-label>
+        <ion-textarea [(ngModel)]="description"></ion-textarea>
+      </ion-item>
 
 
-  <div class="form-button-wrapper">
-  <button ion-button full color="secondary" (click)="save()">Save</button>
-  </div>
+    <div class="form-button-wrapper">
+    <button ion-button full color="secondary" (click)="save()">Save</button>
+    </div>
 
-  </ion-list>
+    </ion-list>
+
+  </form>
 
 </ion-content>
