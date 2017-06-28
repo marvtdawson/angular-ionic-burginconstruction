@@ -1,17 +1,32 @@
-<form action="">
-  <ion-list>
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ siteName }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="page-content-top">
+    <h1>{{ pageTitle }}</h1>
+    <h5>Our History</h5>
+    <p> The history of this company is so damn awesome!</p>
+  </div>
+  <form action="">
+    <ion-list>
 
-    <ion-item>
-      <ion-label floating>Name</ion-label>
-      <ion-input type="text" value=""></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label floating>Email</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
-    <button ion-button color="secondary" block>Subscribe</button>
+      <button ion-button color="secondary" block>Subscribe</button>
 
-  </ion-list>
-</form>
+    </ion-list>
+  </form>
+</ion-content>

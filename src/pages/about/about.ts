@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { ContactUsPage} from '../../pages/contact-us/contact-us';
 import {NavController} from "ionic-angular";
+import { ContactUsPage} from '../../pages/contact-us/contact-us';
+import { SubscribePage } from '../../pages/subscribe/subscribe';
+
 
 @Component({
   selector: 'about',
@@ -12,5 +14,6 @@ export class AboutPage {
   pageTitle = 'About';
   contactus = './contact-us.html';
   pushContactPage = ContactUsPage;
+  pushSubscribePage = SubscribePage;
   siteName = 'Burgin Construction';
 }
