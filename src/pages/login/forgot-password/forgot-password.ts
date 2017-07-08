@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'forgot-password',
-  templateUrl: 'forgot-password.html'
+  templateUrl: 'src/pages/login/forgot-password/forgot-password.html'
 })
 
 export class ForgotPasswordPage{

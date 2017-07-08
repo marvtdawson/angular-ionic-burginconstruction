@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'subscribe',
-  templateUrl: 'subscribe.html'
+  templateUrl: 'src/pages/corepages/subscribe/subscribe.html'
 })
 
 export class SubscribePage {

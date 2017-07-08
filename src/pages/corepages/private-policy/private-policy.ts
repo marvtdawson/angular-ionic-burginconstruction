@@ -2,7 +2,7 @@ import { Component} from "@angular/core";
 
 @Component({
   selector: "private-policy",
-  templateUrl: "private-policy.html"
+  templateUrl: "src/pages/corepages/private-policy/private-policy.html"
 })
 
 export class PrivatePolicyPage{

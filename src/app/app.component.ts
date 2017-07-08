@@ -7,8 +7,8 @@ import { HttpModule } from '@angular/http';
 
 import { HomePage } from '../pages/home/home';
 //import { ListPage } from '../pages/list/list';
-import { AboutPage } from "../pages/about/about";
-import { ContactUsPage } from "../pages/contact-us/contact-us";
+import { AboutPage } from "../pages/corepages/about/about";
+import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { LoginPage } from "../pages/login/login";
 //import { RegisterPage } from "../pages/register/register";
 import { SplashHomePage } from "../pages/splash-home/splash-home";

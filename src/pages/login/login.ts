@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ForgotPasswordPage } from '../../pages/forgot-password/forgot-password';
+import { ForgotPasswordPage } from './forgot-password/forgot-password';
 import { RegisterPage } from '../../pages/register/register';
 import { NgForm } from "@angular/forms";
 

@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: 'terms-and-conditions',
-  templateUrl: 'terms-and-conditions.html'
+  templateUrl: 'src/pages/corepages/terms-and-conditions/terms-and-conditions.html'
 })
 
 export class TermsAndConditionsPage{
