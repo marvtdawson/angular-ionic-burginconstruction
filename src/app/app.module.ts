@@ -28,6 +28,7 @@ import { QuotePage } from "../pages/quotes/quotes";
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import {AddQuotesPage} from "../pages/add-quotes/add-quotes";
+import {ProjectListService} from "../services/project-list";
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import {AddQuotesPage} from "../pages/add-quotes/add-quotes";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     QuotesProvider,
+    ProjectListService,
   ]
 })
 export class AppModule {}

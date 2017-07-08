@@ -15,5 +15,5 @@ export class AboutPage {
   contactus = './contact-us.html';
   pushContactPage = ContactUsPage;
   pushSubscribePage = SubscribePage;
-  siteName = 'Burgin Construction';
+  siteName = 'Burgin Construction LLC';
 }

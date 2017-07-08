@@ -18,16 +18,18 @@
 
     <ion-item>
       <ion-label floating>Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="text" name="regMem_E1" required ngModel></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
-      <ion-input type="password" required ></ion-input>
+      <ion-input type="password" name="regMem_Pw" required ngModel ></ion-input>
     </ion-item>
 
     <div class="form-button-wrapper">
-      <button ion-button color="primary" block>Login</button>
+      <button ion-button color="primary"
+              block
+              [disabled]="!login.valid">Login</button>
     </div>
 
   </ion-list>

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class ContactUsPage {
   constructor(){}
   pageTitle = 'Contact Us';
-  siteName = 'Who\'s Laundry';
+  siteName = 'Burgin Construction LLC';
 }

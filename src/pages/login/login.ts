@@ -11,12 +11,12 @@ import { NgForm } from "@angular/forms";
 export class LoginPage{
   constructor(){}
   pageTitle = 'Member Login';
-  siteName = 'Burgin Construction LLC';
+  //siteName = 'Burgin Construction LLC';
   pushForgotPasswordPage = ForgotPasswordPage;
   pushRegisterPage = RegisterPage;
 
-  onSubmit(login: NgForm){
-
+  onSubmit(form: NgForm){
+    console.log(form); // print values of input fields
   }
 }
 

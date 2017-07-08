@@ -1,4 +1,7 @@
 login{
-  background: url('../../assets/img/loginpage_background.jpg');
-  background-repeat: no-repeat;
+  background: url('../../assets/img/loginpage_background.jpg') no-repeat;
+
+  a {
+    text-decoration: none;
+  }
 }
