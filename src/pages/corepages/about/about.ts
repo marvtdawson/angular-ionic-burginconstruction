@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import {NavController} from "ionic-angular";
-import { ContactUsPage} from '../contact-us/contact-us';
+import { NavController } from "ionic-angular";
+import { ContactUsPage } from '../contact-us/contact-us';
 import { SubscribePage } from '../subscribe/subscribe';
 import { MembersettingsPage } from '../../members/membersettings/membersettings';
 import { MemberprofilePage } from '../../members/memberprofile/memberprofile';
-import {HomePage} from "../../home/home";
+import { HomePage } from '../../home/home';
 
 
 @Component({
   selector: 'about',
-  templateUrl: 'src/pages/corepages/about/about.html'
+  templateUrl: 'about.html'
 })
 
 export class AboutPage {

@@ -39,3 +39,15 @@ ion-footer ion-icon{
   height: 40px;
   color: #FFFFFF;
 }
+
+@media(max-width: 1920px){
+  ion-icon{
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 768px){
+  ion-icon{
+    visibility: visible;
+  }
+}

@@ -2,7 +2,9 @@
   <ion-navbar>
     <ion-title>Request Quote</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -21,22 +23,22 @@
 
       <ion-item>
         <ion-label floating>Customer Name</ion-label>
-        <ion-input [(ngModel)]="cust_name" type="text"></ion-input>
+        <ion-input [(ngModel)]="custname" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Project Title</ion-label>
-        <ion-input [(ngModel)]="proj_title" type="text"></ion-input>
+        <ion-input [(ngModel)]="projtitle" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Project Type</ion-label>
-        <ion-input [(ngModel)]="proj_type" type="text"></ion-input>
+        <ion-input [(ngModel)]="projtype" type="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Extra Project Notes</ion-label>
-        <ion-textarea [(ngModel)]="proj_notes"></ion-textarea>
+        <ion-textarea [(ngModel)]="projnotes"></ion-textarea>
       </ion-item>
 
 

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { NavController } from "ionic-angular";
 import { ForgotPasswordPage } from './forgot-password/forgot-password';
-import { RegisterPage } from '../../pages/register/register';
+import { RegisterPage } from '../register/register';
 import { NgForm } from "@angular/forms";
 
 @Component({
@@ -9,9 +10,9 @@ import { NgForm } from "@angular/forms";
 })
 
 export class LoginPage{
-  constructor(){}
+  constructor(public navCtrl: NavController){}
   pageTitle = 'Member Login';
-  //siteName = 'Burgin Construction LLC';
+  siteName = 'Burgin Construction LLC';
   pushForgotPasswordPage = ForgotPasswordPage;
   pushRegisterPage = RegisterPage;
 

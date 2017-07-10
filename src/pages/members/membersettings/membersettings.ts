@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-membersettings',
-  templateUrl: 'src/pages/members/membersettings/membersettings.html',
+  templateUrl: 'membersettings.html',
 })
 export class MembersettingsPage {
 

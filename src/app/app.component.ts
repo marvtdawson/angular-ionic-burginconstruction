@@ -2,19 +2,18 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, ModalController, LoadingController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HttpModule } from '@angular/http';
-
+//import { HttpModule } from '@angular/http';
 
 import { HomePage } from '../pages/home/home';
-//import { ListPage } from '../pages/list/list';
-import { AboutPage } from "../pages/corepages/about/about";
-import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { LoginPage } from "../pages/login/login";
-//import { RegisterPage } from "../pages/register/register";
 import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { AuthProvider } from "../providers/auth/auth";
 import { QuotePage } from "../pages/quotes/quotes";
+//import { RegisterPage } from "../pages/register/register";
+//import { ListPage } from '../pages/list/list';
 
+import { AboutPage } from "../pages/corepages/about/about";
+import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 
 @Component({
   templateUrl: 'app.html'
@@ -22,9 +21,9 @@ import { QuotePage } from "../pages/quotes/quotes";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SplashHomePage; // by default any is = HomePage; - using LoginPage for Authenticating p
+  rootPage: any = SplashHomePage; // by default any is = HomePage; - using LoginPage for Authenticating root page
   loader: any;
-  siteName = 'Burgin Construction';
+  siteName = 'Burgin Construction LLC';
   appVersion = 'v1.2';
   pushHomePage = HomePage;
 
@@ -45,8 +44,8 @@ export class MyApp {
       {title: 'About', component: AboutPage},
       {title: 'Request Quote', component: QuotePage},
       {title: 'Login', component: LoginPage},
-      //{title: 'List', component: ListPage},
       {title: 'Contact Us', component: ContactUsPage},
+      //{title: 'List', component: ListPage},
       //{title: 'Sign Up', component: RegisterPage},
     ];
 

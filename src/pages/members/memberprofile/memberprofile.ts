@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-memberprofile',
-  templateUrl: 'src/pages/members/memberprofile/memberprofile.html',
+  templateUrl: 'memberprofile.html',
 })
 export class MemberprofilePage {
 

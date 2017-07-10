@@ -13,20 +13,20 @@
     <p> Get the latest updates on our recent projects.</p>
     <p> Find out what we are up to in the community and who we are networking with.</p>
   </div>
-  <form action="">
+  <form #subscribe="ngForm" (ngSubmit)="onSubmit(subscribe)">
     <ion-list>
 
       <ion-item>
         <ion-label floating>Name</ion-label>
-        <ion-input type="text" value=""></ion-input>
+        <ion-input type="text" value="" name="regName" ngModel></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Email</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input type="text" name="regPw" required ngModel ></ion-input>
       </ion-item>
 
-      <button ion-button color="secondary" block>Subscribe</button>
+      <button ion-button color="primary" block [disabled]="!subscribe.valid">Subscribe</button>
 
     </ion-list>
   </form>

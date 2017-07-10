@@ -3,7 +3,7 @@ import { ViewController } from 'ionic-angular';
 
 @Component({
   selector: 'add-quotes',
-  templateUrl: 'src/pages/quotes/add-quotes/add-quotes.html'
+  templateUrl: 'add-quotes.html'
 })
 export class AddQuotesPage {
 

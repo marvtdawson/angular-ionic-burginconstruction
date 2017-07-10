@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from "@angular/forms";
+import { NavController } from "ionic-angular";
 
 @Component({
   selector: 'contact-us',
@@ -6,7 +8,11 @@ import { Component } from '@angular/core';
 })
 
 export class ContactUsPage {
-  constructor(){}
+  constructor(public navCtrl: NavController){}
   pageTitle = 'Contact Us';
   siteName = 'Burgin Construction LLC';
+
+  onSubmit(form: NgForm){
+    console.log(form);
+  }
 }

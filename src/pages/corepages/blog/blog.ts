@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-blog',
-  templateUrl: 'src/pages/corepages/blog/blog.html',
+  templateUrl: 'blog.html',
 })
 export class BlogPage {
 
