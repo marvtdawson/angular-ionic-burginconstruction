@@ -1,4 +1,9 @@
 about a {
   text-decoration: none; }
+about .about-para {
+  word-wrap: break-word; }
+about ion-buttons {
+  width: auto;
+  margin: auto; }
 
 /*# sourceMappingURL=about.css.map */
