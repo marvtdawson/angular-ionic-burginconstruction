@@ -16,6 +16,7 @@ export class MembersettingsPage {
 
   // declare site vars
   siteName = 'Burgin Construction LLC';
+  pageTitle = 'Member Settings';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class MemberprofilePage {
 
   siteName = 'Burgin Construction LLC';
+  pageTitle = 'Member Profile';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
