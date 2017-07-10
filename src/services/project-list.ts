@@ -1,15 +1,15 @@
-import { Project } from "../models/projects";
+import { Projects } from "../models/projects";
 
-export class ProjectListService{
+export class ProjectsListService{
 
-  private projects: Project[] = [];
+  private projects: Projects[] = [];
 
-  addProject(project_name: string, project_room: string){
-    this.projects.push(new Project(project_name, project_room));
+  addProject(projectname: string, project_room: string){
+    this.projects.push(new Projects(projectname, project_room));
   }
 
-  addProjects(project_items: Project[]){
-    this.projects.push(...project_items);
+  addProjects(project_names: Projects[]){
+    this.projects.push(...project_names);
   }
 
   getProjects(){

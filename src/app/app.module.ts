@@ -30,7 +30,7 @@ import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile"
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
-import { ProjectListService } from "../services/project-list";
+import { ProjectsListService } from "../services/project-list";
 
 
 @NgModule({
@@ -92,7 +92,7 @@ import { ProjectListService } from "../services/project-list";
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     QuotesProvider,
-    ProjectListService,
+    ProjectsListService,
   ]
 })
 export class AppModule {}

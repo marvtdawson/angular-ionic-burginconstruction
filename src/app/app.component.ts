@@ -42,7 +42,7 @@ export class MyApp {
     this.pages = [
       {title: 'Home', component: HomePage},
       {title: 'About', component: AboutPage},
-      {title: 'Request Quote', component: QuotePage},
+      {title: 'Request Service', component: QuotePage},
       {title: 'Login', component: LoginPage},
       {title: 'Contact Us', component: ContactUsPage},
       //{title: 'List', component: ListPage},
