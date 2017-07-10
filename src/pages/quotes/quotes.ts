@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { NavController, ModalController } from 'ionic-angular';
 import { AddQuotesPage } from './add-quotes/add-quotes';
 import { QuotesProvider } from '../../providers/quotes/quotes';
+import {RepairServicesPage} from "./repair-services/repair-services";
 
 @Component({
   selector: 'quotes',
@@ -11,6 +12,7 @@ export class QuotePage {
 
   quotes: any;
   siteName = 'Burgin Construction LLC';
+  pushRepairServicesPage = RepairServicesPage;
 
   constructor(public nav: NavController,
               public quoteService: QuotesProvider,

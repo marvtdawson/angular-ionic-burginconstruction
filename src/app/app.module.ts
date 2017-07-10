@@ -30,6 +30,7 @@ import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile"
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
+import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
 
 
@@ -54,6 +55,7 @@ import { ProjectsListService } from "../services/project-list";
     SplashHomePage,
     QuotePage,
     AddQuotesPage,
+    RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
   ],
@@ -83,6 +85,7 @@ import { ProjectsListService } from "../services/project-list";
     SplashHomePage,
     QuotePage,
     AddQuotesPage,
+    RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
   ],

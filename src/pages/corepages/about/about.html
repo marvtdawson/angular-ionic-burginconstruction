@@ -15,15 +15,21 @@
     <p> The history of this company is so damn awesome!</p>
   </div>
 
-  <div>
-    <p>Got some great news you would like to share with us.  We love to hear all about it.</p>
-    <p><a [navPush]="pushContactPage"> Contact us</a> with great news.</p>
-  </div>
+  <ion-item>
+    <p>Got some great news you would like to share with us. We love to hear all about it.</p>
+    <ion-buttons>
+      <button ion-button small [navPush]="pushContactPage">Contact Us</button>
+    </ion-buttons>
+  </ion-item>
 
-  <div><p>
-    Stay connected to us by subscribing to your monthly newsletter.
-    <a [navPush]="pushSubscribePage">Subscribe Now!</a>
-  </p></div>
+  <ion-item>
+    <p>
+      Stay connected to us by subscribing to your monthly project newsletter.
+    </p>
+      <ion-buttons>
+        <button ion-button small [navPush]="pushSubscribePage">Subscribe Now!</button>
+      </ion-buttons>
+  </ion-item>
 
 </ion-content>
 

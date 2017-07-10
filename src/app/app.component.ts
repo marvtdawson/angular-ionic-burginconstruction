@@ -14,7 +14,7 @@ import { QuotePage } from "../pages/quotes/quotes";
 
 import { AboutPage } from "../pages/corepages/about/about";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
-
+import {ServicesPage} from "../pages/corepages/services/services";
 @Component({
   templateUrl: 'app.html'
 })
@@ -42,7 +42,8 @@ export class MyApp {
     this.pages = [
       {title: 'Home', component: HomePage},
       {title: 'About', component: AboutPage},
-      {title: 'Request Service', component: QuotePage},
+      {title: 'Services', component: ServicesPage},
+      {title: 'Get Started', component: QuotePage},
       {title: 'Login', component: LoginPage},
       {title: 'Contact Us', component: ContactUsPage},
       //{title: 'List', component: ListPage},
