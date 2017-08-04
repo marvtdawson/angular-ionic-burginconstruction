@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
 @Component({
   selector: 'terms-and-conditions',
@@ -6,7 +7,9 @@ import { Component } from "@angular/core";
 })
 
 export class TermsAndConditionsPage{
-  constructor(){}
-  pageTitle = 'Terms & Conditions';
-  siteName = 'Who\'s Laundry';
+  constructor(public siteData: SiteDataProvider){}
+
+  pageTitle: string = 'Terms & Conditions';
+  siteName: string  = this.siteData.siteName;
+  appVersion: string = this.siteData.appVersion;
 }

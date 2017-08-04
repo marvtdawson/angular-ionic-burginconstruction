@@ -32,6 +32,7 @@ import { QuotesProvider } from '../providers/quotes/quotes';
 import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
 import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
+import { SiteDataProvider } from '../providers/site-data/site-data';
 
 
 @NgModule({
@@ -96,6 +97,7 @@ import { ProjectsListService } from "../services/project-list";
     AuthProvider,
     QuotesProvider,
     ProjectsListService,
+    SiteDataProvider,
   ]
 })
 export class AppModule {}

@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SiteDataProvider} from "../../providers/site-data/site-data";
 
-/**
- * Generated class for the SplashHomePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+
 @IonicPage()
 @Component({
   selector: 'page-splash-home',
@@ -14,14 +10,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SplashHomePage {
 
-  siteName = 'Burging Construction LLC Quick Quote';
-  appVersion = 'v1.2';
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public siteData: SiteDataProvider) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SplashHomePage');
-  }
+  siteName = this.siteData.siteName;
+  appVersion = this.siteData.appVersion;
 
 }

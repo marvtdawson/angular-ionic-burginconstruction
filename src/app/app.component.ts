@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, ModalController, LoadingController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SiteDataProvider } from "../providers/site-data/site-data"
 //import { HttpModule } from '@angular/http';
 
 import { HomePage } from '../pages/home/home';
@@ -15,6 +16,8 @@ import { QuotePage } from "../pages/quotes/quotes";
 import { AboutPage } from "../pages/corepages/about/about";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import {ServicesPage} from "../pages/corepages/services/services";
+
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,10 +26,7 @@ export class MyApp {
 
   rootPage: any = SplashHomePage; // by default any is = HomePage; - using LoginPage for Authenticating root page
   loader: any;
-  siteName = 'Burgin Construction LLC';
-  appVersion = 'v1.2';
-  pushHomePage = HomePage;
-
+  siteName: string  = this.siteData.siteName;
   pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform,
@@ -34,7 +34,8 @@ export class MyApp {
               public splashScreen: SplashScreen,
               public modalCtrl: ModalController,
               public auth: AuthProvider,
-              public loadingCtrl: LoadingController,) {
+              public loadingCtrl: LoadingController,
+              public siteData: SiteDataProvider) {
 
     this.initializeApp();
 
@@ -50,7 +51,7 @@ export class MyApp {
       //{title: 'Sign Up', component: RegisterPage},
     ];
 
-    this.presentLoading();
+    this.presentLoading(); // add loader
 
     this.auth.login().then((isLoggedIn) => {
 
@@ -59,14 +60,14 @@ export class MyApp {
       } else {
         this.rootPage = LoginPage;
       }
-      this.loader.dismiss();
+      this.loader.dismiss(); // remove loader
     });
 
   }
 
   presentLoading() {
     this.loader = this.loadingCtrl.create({
-      content: "Authenticating..."
+      content: "Authenticating Connection..."
     });
     this.loader.present();
   }

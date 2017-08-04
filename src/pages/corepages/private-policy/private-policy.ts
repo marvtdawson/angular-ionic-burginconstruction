@@ -1,4 +1,5 @@
 import { Component} from "@angular/core";
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
 @Component({
   selector: "private-policy",
@@ -6,7 +7,9 @@ import { Component} from "@angular/core";
 })
 
 export class PrivatePolicyPage{
-  constructor(){}
-  pageTitle = "Private Policy";
-  siteName = 'Burgin Construction LLC';
+  constructor(public siteData: SiteDataProvider){}
+
+  pageTitle: string  = "Private Policy";
+  siteName = this.siteData.siteName;
+  appVersion = this.siteData.appVersion;
 }

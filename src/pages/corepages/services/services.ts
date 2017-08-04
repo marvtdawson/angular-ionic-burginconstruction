@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { SiteDataProvider } from "../../../providers/site-data/site-data"
 
 @Component({
   selector: 'services',
@@ -6,8 +7,9 @@ import { Component } from "@angular/core";
 })
 
 export class ServicesPage{
-  constructor(){}
+  constructor(public siteData: SiteDataProvider){}
 
-  pageTitle = 'Services';
-  siteName = 'Burgin Construction LLC';
+  pageTitle: string = 'Services';
+  siteName:  string = this.siteData.siteName;
+  appVersion: string = this.siteData.appVersion;
 }

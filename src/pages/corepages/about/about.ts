@@ -5,6 +5,7 @@ import { SubscribePage } from '../subscribe/subscribe';
 import { MembersettingsPage } from '../../members/membersettings/membersettings';
 import { MemberprofilePage } from '../../members/memberprofile/memberprofile';
 import { HomePage } from '../../home/home';
+import {SiteDataProvider} from "../../../providers/site-data/site-data";
 
 
 @Component({
@@ -13,13 +14,16 @@ import { HomePage } from '../../home/home';
 })
 
 export class AboutPage {
-  constructor(public navCtrl: NavController) {}
-  pageTitle = 'About';
-  contactus = './contact-us.html';
+  constructor(public navCtrl: NavController, public siteData: SiteDataProvider) {}
+
+  // site data variables
+  siteName = this.siteData.siteName;
+  appVersion = this.siteData.appVersion;
+
+  pageTitle: string = 'About';
   pushContactPage = ContactUsPage;
   pushSubscribePage = SubscribePage;
   pushHomePage = HomePage;
   pushMemberSettingsPage = MembersettingsPage;
   pushMemberProfilePage = MemberprofilePage;
-  siteName: string = 'Burgin Construction LLC';
 }
