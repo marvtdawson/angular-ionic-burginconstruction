@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 /**
  * Generated class for the MembersettingsPage page.
  *
@@ -15,14 +15,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class MembersettingsPage {
 
   // declare site vars
-  siteName = 'Burgin Construction LLC';
-  pageTitle = 'Member Settings';
+  pageTitle: string  = 'Member Settings';
+  siteName: string  = this.siteData.siteName;
+  appVersion: string = this.siteData.appVersion;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MembersettingsPage');
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public siteData: SiteDataProvider) {
   }
 
 }

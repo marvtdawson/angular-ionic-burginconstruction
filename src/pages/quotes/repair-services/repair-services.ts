@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
-/**
- * Generated class for the RepairServicesPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-repair-services',
@@ -14,10 +9,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RepairServicesPage {
 
-  siteName = 'Burgin Construction LLC';
-  pageTitle = 'Request Repair Services';
+  pageTitle: string = 'Request Repair Services';
+  siteName: string = this.siteData.siteName;
+  appVersion: string = this.siteData.appVersion;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public siteData: SiteDataProvider) {
   }
 
   ionViewDidLoad() {

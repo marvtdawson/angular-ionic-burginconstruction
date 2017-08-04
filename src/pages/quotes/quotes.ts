@@ -3,6 +3,7 @@ import { NavController, ModalController } from 'ionic-angular';
 import { AddQuotesPage } from './add-quotes/add-quotes';
 import { QuotesProvider } from '../../providers/quotes/quotes';
 import {RepairServicesPage} from "./repair-services/repair-services";
+import { SiteDataProvider } from "../../providers/site-data/site-data";
 
 @Component({
   selector: 'quotes',
@@ -11,12 +12,15 @@ import {RepairServicesPage} from "./repair-services/repair-services";
 export class QuotePage {
 
   quotes: any;
-  siteName = 'Burgin Construction LLC';
+  siteName: string = this.siteData.siteName;
+  appVersion: string = this.siteData.appVersion;
+
   pushRepairServicesPage = RepairServicesPage;
 
   constructor(public nav: NavController,
               public quoteService: QuotesProvider,
-              public modalCtrl: ModalController) {
+              public modalCtrl: ModalController,
+              public siteData: SiteDataProvider) {
 
   }
   ionViewDidLoad(){

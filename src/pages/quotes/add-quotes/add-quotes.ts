@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewController } from 'ionic-angular';
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
 @Component({
   selector: 'add-quotes',
@@ -11,11 +12,11 @@ export class AddQuotesPage {
   description: any;
   quote: any;
 
-  constructor(public viewCtrl: ViewController) {
+  constructor(public viewCtrl: ViewController,
+              public siteData: SiteDataProvider) {}
 
-  }
-
-  siteName = 'Burgin Construction LLC';
+  siteName: string = this.siteData.siteName;
+  appVersion: string  = this.siteData.appVersion;
 
   save(): void {
 
