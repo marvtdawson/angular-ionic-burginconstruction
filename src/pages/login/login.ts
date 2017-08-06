@@ -17,9 +17,28 @@ export class LoginPage{
   pageTitle: string = 'Member Login';
   siteName: string  = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
+  firstName: string = 'Marvin';
+  lastName: string = 'Dawson';
+  middleName: string  = 'Terrell';
 
   pushForgotPasswordPage = ForgotPasswordPage;
   pushRegisterPage = RegisterPage;
+
+  ionViewDidLoad(){
+    this.printName(this.firstName, this.lastName, this.middleName);
+  }
+
+  printName(fName: string, lName: string, mName?: string): string{
+    if(mName){
+        return (fName + " " + mName + " " + lName);
+      }
+    else if(lName){
+      return (fName + " " + lName);
+    }
+    else{
+        return (fName);
+    }
+  }
 
   onSubmit(form: NgForm){
     console.log(form); // print values of input fields

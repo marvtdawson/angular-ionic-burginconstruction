@@ -2,15 +2,15 @@ import { Component } from "@angular/core";
 import { NavController, ModalController } from 'ionic-angular';
 import { AddQuotesPage } from './add-quotes/add-quotes';
 import { QuotesProvider } from '../../providers/quotes/quotes';
-import {RepairServicesPage} from "./repair-services/repair-services";
+import { RepairServicesPage } from "./repair-services/repair-services";
 import { SiteDataProvider } from "../../providers/site-data/site-data";
 
 @Component({
   selector: 'quotes',
   templateUrl: 'quotes.html'
 })
-export class QuotePage {
 
+export class QuotePage {
   quotes: any;
   siteName: string = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
@@ -20,9 +20,8 @@ export class QuotePage {
   constructor(public nav: NavController,
               public quoteService: QuotesProvider,
               public modalCtrl: ModalController,
-              public siteData: SiteDataProvider) {
+              public siteData: SiteDataProvider) {}
 
-  }
   ionViewDidLoad(){
 
     this.quoteService.getQuotes().then((data) => {

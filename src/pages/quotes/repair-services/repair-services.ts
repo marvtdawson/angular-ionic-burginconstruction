@@ -20,7 +20,7 @@ export class RepairServicesPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RepairServicesPage');
+    console.log('Repair Service Page Did Load');
   }
 
 }
