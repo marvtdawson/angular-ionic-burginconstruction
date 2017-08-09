@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from "@angular/http";
+import { Network } from "@ionic-native/network";
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -98,6 +99,7 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     QuotesProvider,
     ProjectsListService,
     SiteDataProvider,
+    Network
   ]
 })
 export class AppModule {}
