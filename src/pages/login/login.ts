@@ -11,9 +11,12 @@ import { SiteDataProvider } from "../../providers/site-data/site-data";
 })
 
 export class LoginPage{
+
+  // add and consume modules, providers and services
   constructor(public navCtrl: NavController,
               public siteData: SiteDataProvider){}
 
+  // create variable with types
   pageTitle: string = 'Member Login';
   siteName: string  = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
@@ -28,6 +31,7 @@ export class LoginPage{
     this.printName(this.firstName, this.lastName, this.middleName);
   }
 
+  // this is a test function to console log; should be remove later
   printName(fName: string, lName: string, mName?: string): string{
     if(mName){
         return (fName + " " + mName + " " + lName);

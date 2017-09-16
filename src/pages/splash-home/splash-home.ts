@@ -1,4 +1,4 @@
-import {Component, Injectable} from '@angular/core';
+import {Component, Injectable, EventEmitter} from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SiteDataProvider} from "../../providers/site-data/site-data";
 import { Network } from '@ionic-native/network';
@@ -22,8 +22,12 @@ export class SplashHomePage {
   appVersion = this.siteData.appVersion;
 
 
-  // watch network for a connection
-  public connectSubscription = this.network.onConnect().subscribe(() => {
+  /**
+   * watch network for a connection
+   *
+   */
+
+  connectSubscription = this.network.onConnect().subscribe(() => {
 
     console.log('network connected!');
 
@@ -31,13 +35,13 @@ export class SplashHomePage {
     // before we determine the connection type. Might need to wait.
     // prior to doing any api requests as well.
 
-    /*setTimeout(() => {
-      if (this.network.type === 'wifi') {
-        console.log('we got a wifi connection, woohoo!');
-      }
-    }, 3000);
-
-*/
+    /*
+      setTimeout(() => {
+        if (this.network.type === 'wifi') {
+          console.log('we got a wifi connection, woohoo!');
+        }
+      }, 3000);
+    */
 
   });
 }
