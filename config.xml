@@ -89,4 +89,9 @@
     <plugin name="phonegap-plugin-push" spec="^1.10.5">
         <variable name="SENDER_ID" value="XXXXXXXXX" />
     </plugin>
+    <plugin name="cordova-plugin-ionic" spec="^4.1.5">
+        <variable name="APP_ID" value="7d5aae90" />
+        <variable name="CHANNEL_NAME" value="Master" />
+        <variable name="UPDATE_METHOD" value="background" />
+    </plugin>
 </widget>
