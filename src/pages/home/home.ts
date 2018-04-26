@@ -53,27 +53,27 @@ export class HomePage {
     {
       title: 'Remodeling',
       src: '../../assets/img/site/remodeling.jpg',
-      info_icon: '/../assets/icon/icon8-more-24.png'
+      info_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Dry Wall',
       src: '../../assets/img/site/drywall-panels.jpg',
-      info_icon: '/../assets/icon/icon8-more-24.png'
+      info_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Flooring',
       src: '../../assets/img/projs/angelas/floor/DSC00306.JPG',
-      info_icon: '/../assets/icon/icon8-more-24.png'
+      info_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Siding',
       src: '../../assets/img/site/vinyl-siding-101-2017.jpg',
-      info_icon: '/../assets/icon/icon8-more-24.png'
+      info_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Roofing',
       src: '../../assets/img/site/roofing.jpg',
-      info_icon: '/../assets/icon/icon8-more-24.png'
+      info_icon: '/../assets/icon/icons8-more-24.png'
     }
   ];
 
