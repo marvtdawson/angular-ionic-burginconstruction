@@ -17,7 +17,7 @@ export class LoginPage{
               public siteData: SiteDataProvider){}
 
   // create variable with types
-  pageTitle: string = 'Member Login';
+  pageTitle: string = 'Customer Login';
   siteName: string  = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
   firstName: string = 'Marvin';

@@ -15,71 +15,26 @@
   </div>
 
   <ion-list>
-    <ion-list-header text-center>
-      Projects
-    </ion-list-header>
-    <ion-item class="item-wrapper">
+
+    <ion-list-header text-center>Projects</ion-list-header>
+
+    <ion-item class="item-wrapper" *ngFor="let projs of projectInfo">
       <ion-thumbnail class="home-page-thumbnail-img"  item-start>
-        <img src="../../assets/img/projs/randalls/DSC_0018.jpg" alt="Randall Marble Counter">
+        <img (click)="presentProjectsInfoModal()"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
       </ion-thumbnail>
-      <h2>Randall's Kitchen</h2>
-      <p>New Cabinets • 2018</p>
-      <button ion-button clear item-end><img src="../../assets/icon/icons8-view-26.png" alt=""></button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/projs/brians_bathroom/P1020725.JPG" alt="Brian's Bathroom">
-      </ion-thumbnail>
-      <h2>Brian's Bathroom</h2>
-      <p>Complete Remodel • 2016</p>
-      <button ion-button clear item-end><img src="../../assets/icon/icons8-view-26.png" alt=""></button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/projs/nicole/2014-05-16%2017.46.50.jpg" alt="">
-      </ion-thumbnail>
-      <h2>Nicole's Kitchen</h2>
-      <p>Fire Damage• 2014</p>
-      <button ion-button clear item-end><img src="../../assets/icon/icons8-view-26.png" alt=""></button>
+      <h2>{{ projs.title }}</h2>
+      <p>{{ projs.project_name }}</p>
+      <button ion-button clear item-end><img src="{{ projs.info_icon }}" alt=""></button>
     </ion-item>
 
-    <ion-list-header text-center>
-      Services
-    </ion-list-header>
-    <ion-item class="item-wrapper">
+    <ion-list-header text-center>Services</ion-list-header>
+
+    <ion-item class="item-wrapper" *ngFor="let servs of serviceInfo">
       <ion-thumbnail item-start>
-        <img src="../../assets/img/site/remodeling.jpg" alt="">
+        <img src="{{ servs.src }}" alt="">
       </ion-thumbnail>
-      <h2>Remodeling</h2>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/site/drywall-panels.jpg" alt="">
-      </ion-thumbnail>
-      <h2>Dry Wall</h2>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/projs/angelas/floor/DSC00306.JPG" alt="">
-      </ion-thumbnail>
-      <h2>Flooring</h2>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/site/vinyl-siding-101-2017.jpg" alt="">
-      </ion-thumbnail>
-      <h2>Siding</h2>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-    <ion-item class="item-wrapper">
-      <ion-thumbnail item-start>
-        <img src="../../assets/img/site/roofing.jpg" alt="">
-      </ion-thumbnail>
-      <h2>Roofing</h2>
-      <button ion-button clear item-end>View</button>
+      <h2>{{ servs.title }}</h2>
+      <button ion-button clear item-end><img src="{{ servs.info_icon }}"></button>
     </ion-item>
   </ion-list>
 

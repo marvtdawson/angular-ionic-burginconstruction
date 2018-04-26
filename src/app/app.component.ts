@@ -15,7 +15,8 @@ import { QuotePage } from "../pages/quotes/quotes";
 
 import { AboutPage } from "../pages/corepages/about/about";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
-import {ServicesPage} from "../pages/corepages/services/services";
+import { ServicesPage } from "../pages/corepages/services/services";
+import { TabsPage } from "../pages/tabs/tabs";
 
 
 @Component({
@@ -24,7 +25,7 @@ import {ServicesPage} from "../pages/corepages/services/services";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SplashHomePage; // by default any is = HomePage; - using LoginPage for Authenticating root page
+  rootPage: any = HomePage; // by default any is = HomePage; - using LoginPage for Authenticating root page
   loader: any;
   siteName: string  = this.siteData.siteName;
   pages: Array<{ title: string, component: any }>;
@@ -56,7 +57,7 @@ export class MyApp {
     this.auth.login().then((isLoggedIn) => {
 
       if (isLoggedIn === true) {
-        this.rootPage = HomePage;
+        this.rootPage = TabsPage;
       } else {
         this.rootPage = HomePage;
       }

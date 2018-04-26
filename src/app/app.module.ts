@@ -28,12 +28,15 @@ import { QuotePage } from "../pages/quotes/quotes";
 import { MembersettingsPage } from "../pages/members/membersettings/membersettings";
 import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile";
 
+
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
 import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
 import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
 import { SiteDataProvider } from '../providers/site-data/site-data';
+import {TabsPage} from "../pages/tabs/tabs";
+import { ModalPage } from "../pages/modal/modal";
 
 
 @NgModule({
@@ -60,6 +63,8 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
+    TabsPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -90,6 +95,8 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
+    TabsPage,
+    ModalPage
   ],
   providers: [
     StatusBar,
