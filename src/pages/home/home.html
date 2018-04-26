@@ -29,12 +29,12 @@
 
     <ion-list-header text-center>Services</ion-list-header>
 
-    <ion-item class="item-wrapper" *ngFor="let servs of serviceInfo">
-      <ion-thumbnail item-start>
+    <ion-item class="item-wrapper" *ngFor="let servs of servicesInfo">
+      <ion-thumbnail class="home-page-thumbnail-img" item-start>
         <img src="{{ servs.src }}" alt="">
       </ion-thumbnail>
       <h2>{{ servs.title }}</h2>
-      <button ion-button clear item-end><img src="{{ servs.info_icon }}"></button>
+      <button ion-button clear item-end><img src="{{ servs.service_icon }}"></button>
     </ion-item>
   </ion-list>
 

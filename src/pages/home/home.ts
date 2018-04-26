@@ -43,37 +43,37 @@ export class HomePage {
     {
       title: 'Nicole\'s Kitchen',
       project_name: 'Fire Damage• 2014',
-      src: '../../assets/img/projs/nicole/2014-05-16%2017.46.50.jpg',
+      src: '../../assets/img/projs/nicole/new_kitchen.jpg',
       img_alt: 'Nicole\'s Kitchen Fire Remodel',
       info_icon: '/../assets/icon/icons8-view-26.png'
     }
   ];
 
-  serviceInfo = [
+  servicesInfo = [
     {
       title: 'Remodeling',
       src: '../../assets/img/site/remodeling.jpg',
-      info_icon: '/../assets/icon/icons8-more-24.png'
+      service_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Dry Wall',
       src: '../../assets/img/site/drywall-panels.jpg',
-      info_icon: '/../assets/icon/icons8-more-24.png'
+      service_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Flooring',
       src: '../../assets/img/projs/angelas/floor/DSC00306.JPG',
-      info_icon: '/../assets/icon/icons8-more-24.png'
+      service_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Siding',
       src: '../../assets/img/site/vinyl-siding-101-2017.jpg',
-      info_icon: '/../assets/icon/icons8-more-24.png'
+      service_icon: '/../assets/icon/icons8-more-24.png'
     },
     {
       title: 'Roofing',
       src: '../../assets/img/site/roofing.jpg',
-      info_icon: '/../assets/icon/icons8-more-24.png'
+      service_icon: '/../assets/icon/icons8-more-24.png'
     }
   ];
 
