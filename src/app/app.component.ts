@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform, ModalController, LoadingController } from 'ionic-angular';
+import { Nav, Platform, ModalController, LoadingController, ToastController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SiteDataProvider } from "../providers/site-data/site-data"
@@ -35,8 +35,8 @@ export class MyApp {
               public modalCtrl: ModalController,
               public auth: AuthProvider,
               public loadingCtrl: LoadingController,
+              private toastCtrl: ToastController,
               public siteData: SiteDataProvider) {
-
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -51,7 +51,7 @@ export class MyApp {
       //{title: 'Sign Up', component: RegisterPage},
     ];
 
-    this.presentLoading(); // add loader
+    this.presentLoading(); // show loader
 
     this.auth.login().then((isLoggedIn) => {
 
@@ -67,16 +67,17 @@ export class MyApp {
 
   presentLoading() {
     this.loader = this.loadingCtrl.create({
-      content: "Authenticating Connection..."
+      content: "Authenticating...",
+      duration: 3000
     });
     this.loader.present();
   }
 
-  notARegisterMember() {
+  /*notARegisterMember() {
     this.loader = this.loadingCtrl.create({
       content: "Please Register"
     })
-  }
+  }*/
 
   initializeApp() {
     this.platform.ready().then(() => {

@@ -7,10 +7,10 @@ page-home {
     }
     .homeSlide-text{
       float: left;
-      width: 77%;
+      width: 80%;
       color: #FFFFFF;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 28px;
       margin: -48px 0 0 5px;
       position: relative;
       z-index: 10;
@@ -28,6 +28,9 @@ page-home {
       margin-bottom: 7px;
       padding-left: 7px;
       padding-right: 7px;
+    }
+    .item-wrapper h2{
+      font-size: 1.4rem;
     }
     .item-ios ion-thumbnail img{
       width: 150px;

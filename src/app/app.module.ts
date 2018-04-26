@@ -34,7 +34,6 @@ import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
 import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
 import { SiteDataProvider } from '../providers/site-data/site-data';
-import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
 
 @NgModule({
