@@ -21,7 +21,6 @@ export class SplashHomePage {
   siteName = this.siteData.siteName;
   appVersion = this.siteData.appVersion;
 
-
   /**
    * watch network for a connection
    *

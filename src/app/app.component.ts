@@ -56,9 +56,9 @@ export class MyApp {
     this.auth.login().then((isLoggedIn) => {
 
       if (isLoggedIn === true) {
-        this.rootPage = SplashHomePage;
+        this.rootPage = HomePage;
       } else {
-        this.rootPage = LoginPage;
+        this.rootPage = HomePage;
       }
       this.loader.dismiss(); // remove loader
     });

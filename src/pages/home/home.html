@@ -8,49 +8,96 @@
 </ion-header>
 
 <!-- display page content -->
-<ion-content padding>
-  <!-- Slider main container -->
-  <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="../../assets/img/cedar_view.png" class="homeSlide_imgs" ></div>
-      <div class="swiper-slide"><img src="../../assets/img/Hip-Hop-News-1024x386.jpg" class="homeSlide_imgs" ></div>
-      <div class="swiper-slide"><img src="../../assets/img/homeSlide_5.png" class="homeSlide_imgs" ></div>
-      <div class="swiper-slide"><img src="../../assets/img/logo_url_black_bkground_2500_x_1152.png" class="homeSlide_imgs" ></div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+<ion-content>
+  <img class="homeSlide_imgs" src="../../assets/img/site/homePage_placeholder_1.jpg">
+  <div class="homeSlide-text">
+    <span>Same Home</span> <span class="homeSlide-text-two">NEW FEEL!</span>
   </div>
 
+  <ion-list>
+    <ion-list-header text-center>
+      Projects
+    </ion-list-header>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail class="home-page-thumbnail-img"  item-start>
+        <img src="../../assets/img/projs/randalls/DSC_0018.jpg" alt="Randall Marble Counter">
+      </ion-thumbnail>
+      <h2>Randall's Kitchen</h2>
+      <p>New Cabinets • 2018</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/projs/angelas/basement/DSC00281.JPG" alt="Nicole's Kitchen Remodel">
+      </ion-thumbnail>
+      <h2>Angie's Basement</h2>
+      <p>Dry Wall • 2017</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/projs/nicole/2014-05-16%2017.46.50.jpg" alt="">
+      </ion-thumbnail>
+      <h2>Nicole's Kitchen</h2>
+      <p>Fire Damage• 2014</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/projs/brians_bathroom/P1020725.JPG" alt="Brian's Bathroom">
+      </ion-thumbnail>
+      <h2>Brian's Bathroom</h2>
+      <p>Complete Remodel • 2016</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="../../assets/img/projs/pastor_williams/1383531959799.jpg" alt="Pastor William's Mom Access Ramp">
+      </ion-thumbnail>
+      <h2>Pastor Williams Mom's</h2>
+      <p>Access Ramp • 2016</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+
+    <ion-list-header text-center>
+      Services
+    </ion-list-header>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>Remodels</h2>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>Dry Wall</h2>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>Flooring</h2>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>Siding</h2>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="item-wrapper">
+      <ion-thumbnail item-start>
+        <img src="" alt="">
+      </ion-thumbnail>
+      <h2>Roofing</h2>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>
-
-<script>
-
-  $(document).ready(function () {
-    var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      pagination: '.swiper-pagination',
-
-      // Navigation arrows
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-
-      // And if we need scrollbar
-      scrollbar: '.swiper-scrollbar'
-    })
-  });
-
-</script>

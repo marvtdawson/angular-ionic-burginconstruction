@@ -1,15 +1,14 @@
 page-splash-home {
 
-  .appWrapper{
-    width: 100%;
-    background-color: $background-color;
-  }
-
   ion-footer ion-icon{
     visibility: hidden;
   }
 
   @media(max-width: 768px){
+    ion-content{
+      background: url("../../assets/img/site/homePage_placeholder_1024_x_500.png") no-repeat;
+      background-size: 100% 50%;
+    }
     .homePage-logo-wrapper{
       width: 85%;
       margin: 245px auto 0;

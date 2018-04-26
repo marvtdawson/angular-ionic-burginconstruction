@@ -94,4 +94,5 @@
         <variable name="CHANNEL_NAME" value="Master" />
         <variable name="UPDATE_METHOD" value="background" />
     </plugin>
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
 </widget>
