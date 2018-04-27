@@ -7,7 +7,7 @@ import {HomePage} from "../home/home";
   selector: 'page-tabs',
   template: `
     <ion-tabs>
-      <ion-tab [root]="homePage" tabTitle="Quote" tabIcon="quote"></ion-tab>
+      <ion-tab [root]="homePage" tabTitle="Home" tabIcon="home"></ion-tab>
       <ion-tab [root]="makeQuotePage" tabTitle="Quote" tabIcon="quote"></ion-tab>
       <ion-tab [root]="registerPage" tabTitle="Register" tabIcon="paper"></ion-tab>
     </ion-tabs>

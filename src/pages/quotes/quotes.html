@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Quick Quote
+      Get Started
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="addQuotes()"><ion-icon name="add"></ion-icon></button>
@@ -14,11 +14,12 @@
 
 <ion-content>
 
+  <div class="page-logo-wrapper">
+    <img class="page-logo" src="../../assets/img/logo/logo.png" alt="">
+  </div>
+
   <div class="page-content-top">
-    <h1>{{ pageTitle }}</h1>
-    <p>
-      {{ siteName }} has the right services, tools and resources to get you the most affordable quote for your new project.
-    </p>
+    <h2>{{ pageTitle }}</h2>
   </div>
 
   <ion-item>

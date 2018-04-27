@@ -9,10 +9,10 @@
 
 <!-- display page content -->
 <ion-content padding>
-  <img src="../../assets/img/logo/logo.png" alt="">
   <div class="page-content-top">
     <h1>{{ pageTitle }}</h1>
   </div>
+  <img src="../../assets/img/logo/logo.png" alt="">
 
   <form #login="ngForm" (ngSubmit)="onSubmit(login)" >
     <ion-list>
@@ -41,7 +41,6 @@
       <a [navPush]="pushForgotPasswordPage"> Forgot password?</a>
       <span>or <a [navPush]="pushRegisterPage">Sign Up!</a></span>
     </p>
-
   </div>
 
 </ion-content>

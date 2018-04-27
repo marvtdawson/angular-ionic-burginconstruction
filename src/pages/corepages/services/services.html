@@ -7,22 +7,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <div class="page-content-top">
     <h1>{{ pageTitle }}</h1>
-    <h5>We're a proud home repair service provider.</h5>
-    <p>If its a loose door knob or a leaky faucet to a hole in the wall. We can help you get those minor repairs resolved quickly.</p>
-    <p>{{ siteName }} has been serving the Twin Cities for over 10 year, boasting 20 years of construction know how.</p>
-    <p>Our team of dedicated handy men and women, take pride in extending that quality customer service to you, our value customers.</p>
+    <p>Have a loose door knob, leaky faucet or a hole in the wall. Call us to fix minor repairs quickly.</p>
+    <h2>We specialize in:</h2>
   </div>
 
-  <p>We specialize in the following services:</p>
-  <div>
-    <ul>
-      <li *ngFor="let services of servicesList">
-        {{ services }}
-      </li>
-    </ul>
-  </div>
+
+
+   <ion-list>
+    <ion-item class="item-wrapper" *ngFor="let servs of servicesList">
+      <div class="service-img-wrapper">
+        <img class="service-img" src="{{ servs.src }}" alt="">
+        {{ servs.title }}
+      </div>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

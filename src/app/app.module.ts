@@ -36,6 +36,7 @@ import { TabsPage} from "../pages/tabs/tabs";
 import { ModalPage } from "../pages/modal/modal";
 import { ProjectsPage } from "../pages/projects/projects";
 import {AboutPage} from "../pages/corepages/about/about";
+import {AppHeaderPage} from "../pages/app-header/app-header";
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import {AboutPage} from "../pages/corepages/about/about";
     TabsPage,
     ModalPage,
     ProjectsPage,
-    AboutPage
+    AboutPage,
+    AppHeaderPage,
   ],
   imports: [
     BrowserModule,
@@ -93,7 +95,8 @@ import {AboutPage} from "../pages/corepages/about/about";
     TabsPage,
     ModalPage,
     ProjectsPage,
-    AboutPage
+    AboutPage,
+    AppHeaderPage
   ],
   providers: [
     StatusBar,

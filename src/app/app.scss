@@ -22,6 +22,7 @@
 
   p{
     font-size:16px;
+    color: #000;
   }
   h1{
     color: #000000;
@@ -52,5 +53,15 @@ ion-footer ion-icon{
 @media(max-width: 768px){
   ion-icon{
     visibility: visible;
+  }
+  .page-logo-wrapper{
+    margin: 0 auto 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-page-logo{
+    width: 100px;
+    height: 100px;
   }
 }

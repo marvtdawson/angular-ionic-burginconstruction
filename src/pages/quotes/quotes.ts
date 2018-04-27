@@ -14,6 +14,7 @@ export class QuotePage {
   quotes: any;
   siteName: string = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
+  pageTitle = 'Select A Project';
 
   pushRepairServicesPage = RepairServicesPage;
 

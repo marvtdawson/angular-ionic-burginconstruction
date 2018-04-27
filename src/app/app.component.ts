@@ -17,6 +17,7 @@ import { AboutPage } from "../pages/corepages/about/about";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { ServicesPage } from "../pages/corepages/services/services";
 import { TabsPage } from "../pages/tabs/tabs";
+import { GalleryPage } from "../pages/gallery/gallery";
 
 
 @Component({
@@ -42,14 +43,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      {title: 'Home', component: HomePage},
+      {title: 'Home', component: TabsPage},
       {title: 'About', component: AboutPage},
       {title: 'Services', component: ServicesPage},
       {title: 'Get Started', component: QuotePage},
+      {title: 'Gallery', component: GalleryPage},
+      //{title: 'Sign Up', component: RegisterPage},,
       {title: 'Login', component: LoginPage},
-      {title: 'Contact Us', component: ContactUsPage},
-      //{title: 'List', component: ListPage},
-      //{title: 'Sign Up', component: RegisterPage},
+      {title: 'Contact Us', component: ContactUsPage}
     ];
 
     this.presentLoading(); // show loader

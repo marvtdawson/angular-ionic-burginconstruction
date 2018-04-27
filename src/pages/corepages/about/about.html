@@ -1,10 +1,36 @@
+<page-app-header></page-app-header>
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ pageTitle }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
 
 <!-- display page content -->
 <ion-content padding>
-  <div class="page-content-top">
-
+  <div class="main-content">
     <h5>Our History</h5>
-    <p> The history of this company is so damn awesome!</p>
+    <p>John Burgin's determination to build a legacy for his kids and grandchildren is atonishling!</p>
+    <p>As a kid John's dad instill in him the values of hard work, being a man of your word and integrity.</p>
+    <p>With those values being his foundation for his business, John has learned the true value of customer satisfaction.</p>
+    <h5>The Company</h5>
+    <p>{{ siteName }} has been serving the Twin Cities are for over 10 year, boasting 20 years of construction experience and know how.</p>
+    <p>BC offers young aspiring carpenters the opportunity to learn industry standard process from the ground up.</p>
+    <h5>The Team</h5>
+    <p>Burgin Construction team consist of broad range of compile talent to provide top notch customer service and professional grade job completion.</p>
+    <p>Our team of dedicated handy men and women, take pride in extending quality customer service to the value customers.
+    <ion-buttons item-right>
+      <button ion-button small outline>Meet The Team</button>
+    </ion-buttons>
+    <h5>Associations</h5>
+    <p>Burgin Construction is a part of the following local and national associations.</p>
+    <p>Minority Owned Business Council</p>
+    <p>Twins Cities Miniority Association</p>
+    <p>Duns & Brandstreet</p>
   </div>
 
   <ion-item class="about-para">
@@ -15,12 +41,7 @@
   </ion-item>
 
   <ion-item class="about-para">
-    <p>
-      Stay connected to us by subscribing to your monthly project newsletter.
-    </p>
-      <ion-buttons>
-        <button ion-button small [navPush]="pushSubscribePage">Subscribe Now!</button>
-      </ion-buttons>
+
   </ion-item>
 
 </ion-content>
@@ -31,7 +52,7 @@
     <ion-icon ios="ios-settings" md="md-settings" class="footer-icon" [navPush]="pushMemberSettingsPage"></ion-icon>
 
     <!-- Advanced: explicity set the icon for each platform -->
-    <ion-icon ios="ios-home" md="md-home" class="footer-icon" [navPush]="pushHomePage"></ion-icon>
+    <ion-icon ios="ios-home" md="md-home" class="footer-icon" [navPush]="pushTabsPage"></ion-icon>
 
     <!-- Advanced: explicity set the icon for each platform -->
     <ion-icon ios="ios-contact" md="md-contact" class="footer-icon" [navPush]="pushMemberProfilePage"></ion-icon>

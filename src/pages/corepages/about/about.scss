@@ -1,10 +1,18 @@
 about{
 
-  a {
-    text-decoration: none;
-  }
-  .about-para{
-    word-wrap: break-word;
+  .main-content {
+    p{
+      color: #000000;
+    }
+    a {
+      text-decoration: none;
+    }
+    h5 {
+      color: #FFFFFF;
+    }
+    .about-para {
+      word-wrap: break-word;
+    }
   }
   ion-buttons{
     width: auto;

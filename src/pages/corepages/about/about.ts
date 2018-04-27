@@ -6,6 +6,8 @@ import { MembersettingsPage } from '../../members/membersettings/membersettings'
 import { MemberprofilePage } from '../../members/memberprofile/memberprofile';
 import { HomePage } from '../../home/home';
 import {SiteDataProvider} from "../../../providers/site-data/site-data";
+import {TabsPage} from "../../tabs/tabs";
+import { AppHeaderPage } from "../../app-header/app-header";
 
 
 @Component({
@@ -23,6 +25,7 @@ export class AboutPage {
   pageTitle: string = 'About';
   pushContactPage = ContactUsPage;
   pushSubscribePage = SubscribePage;
+  pushTabsPage = TabsPage;
   pushHomePage = HomePage;
   pushMemberSettingsPage = MembersettingsPage;
   pushMemberProfilePage = MemberprofilePage;
