@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { NavController, ModalController } from 'ionic-angular';
-import { AddQuotesPage } from './add-quotes/add-quotes';
+import { MakeQuotesPage } from './make-quotes/make-quotes';
 import { QuotesProvider } from '../../providers/quotes/quotes';
 import { RepairServicesPage } from "./repair-services/repair-services";
 import { SiteDataProvider } from "../../providers/site-data/site-data";
@@ -33,7 +33,7 @@ export class QuotePage {
 
   addQuotes(){
 
-    let modal = this.modalCtrl.create(AddQuotesPage);
+    let modal = this.modalCtrl.create(MakeQuotesPage);
 
     modal.onDidDismiss(quote => {
       if(quote){

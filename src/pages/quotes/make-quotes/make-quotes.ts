@@ -4,9 +4,9 @@ import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
 @Component({
   selector: 'add-quotes',
-  templateUrl: 'add-quotes.html'
+  templateUrl: 'make-quotes.html'
 })
-export class AddQuotesPage {
+export class MakeQuotesPage {
 
   title: any;
   description: any;

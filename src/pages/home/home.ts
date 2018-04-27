@@ -3,7 +3,7 @@ import { NavController, Modal, ModalController, ModalOptions } from 'ionic-angul
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { SiteDataProvider } from "../../providers/site-data/site-data";
-import { ModalPage } from "../modal/modal";
+import { ProjectsPage } from "../projects/projects";
 
 
 @Component({
@@ -83,7 +83,7 @@ export class HomePage {
       enableBackdropDismiss: false
     };
 
-    const projectModal: Modal = this.modalCtrl.create(ModalPage,
+    const projectModal: Modal = this.modalCtrl.create(ProjectsPage,
       {data: this.projectInfo},
       projectsModalOption);
     projectModal.present();

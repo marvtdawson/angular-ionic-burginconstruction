@@ -59,7 +59,7 @@ export class MyApp {
       if (isLoggedIn === true) {
         this.rootPage = TabsPage;
       } else {
-        this.rootPage = HomePage;
+        this.rootPage = TabsPage;
       }
       this.loader.dismiss(); // remove loader
     });

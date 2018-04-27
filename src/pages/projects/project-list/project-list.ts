@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ProjectsListService} from "../../services/project-list";
-import { SiteDataProvider } from "../../providers/site-data/site-data";
+import {ProjectsListService} from "../../../services/project-list";
+import { SiteDataProvider } from "../../../providers/site-data/site-data";
 
 @IonicPage()
 @Component({

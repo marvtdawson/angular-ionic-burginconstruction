@@ -10,7 +10,6 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { AboutPage } from "../pages/corepages/about/about";
 import { AdminLoginPage } from "../pages/admin-login/admin-login";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { ForgotPasswordPage } from "../pages/login/forgot-password/forgot-password";
@@ -19,10 +18,8 @@ import { RegisterPage } from "../pages/register/register";
 import { SubscribePage } from "../pages/corepages/subscribe/subscribe";
 import { GalleryPage } from "../pages/gallery/gallery";
 import { PrivatePolicyPage } from "../pages/corepages/private-policy/private-policy";
-import { ProductsPage } from "../pages/corepages/products/products";
 import { ServicesPage } from "../pages/corepages/services/services";
 import { TermsAndConditionsPage } from "../pages/corepages/terms-and-conditions/terms-and-conditions";
-import { BlogPage } from "../pages/corepages/blog/blog";
 import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { QuotePage } from "../pages/quotes/quotes";
 import { MembersettingsPage } from "../pages/members/membersettings/membersettings";
@@ -31,12 +28,14 @@ import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile"
 
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
-import { AddQuotesPage } from "../pages/quotes/add-quotes/add-quotes";
+import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
 import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
 import { SiteDataProvider } from '../providers/site-data/site-data';
-import {TabsPage} from "../pages/tabs/tabs";
+import { TabsPage} from "../pages/tabs/tabs";
 import { ModalPage } from "../pages/modal/modal";
+import { ProjectsPage } from "../pages/projects/projects";
+import {AboutPage} from "../pages/corepages/about/about";
 
 
 @NgModule({
@@ -44,7 +43,6 @@ import { ModalPage } from "../pages/modal/modal";
     MyApp,
     HomePage,
     ListPage,
-    AboutPage,
     AdminLoginPage,
     ContactUsPage,
     ForgotPasswordPage,
@@ -53,18 +51,18 @@ import { ModalPage } from "../pages/modal/modal";
     SubscribePage,
     GalleryPage,
     PrivatePolicyPage,
-    ProductsPage,
     ServicesPage,
     TermsAndConditionsPage,
-    BlogPage,
     SplashHomePage,
     QuotePage,
-    AddQuotesPage,
+    MakeQuotesPage,
     RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
     TabsPage,
-    ModalPage
+    ModalPage,
+    ProjectsPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -81,22 +79,21 @@ import { ModalPage } from "../pages/modal/modal";
     ForgotPasswordPage,
     LoginPage,
     RegisterPage,
-    AboutPage,
     SubscribePage,
     GalleryPage,
     PrivatePolicyPage,
-    ProductsPage,
     ServicesPage,
     TermsAndConditionsPage,
-    BlogPage,
     SplashHomePage,
     QuotePage,
-    AddQuotesPage,
+    MakeQuotesPage,
     RepairServicesPage,
     MemberprofilePage,
     MembersettingsPage,
     TabsPage,
-    ModalPage
+    ModalPage,
+    ProjectsPage,
+    AboutPage
   ],
   providers: [
     StatusBar,
@@ -106,7 +103,8 @@ import { ModalPage } from "../pages/modal/modal";
     QuotesProvider,
     ProjectsListService,
     SiteDataProvider,
-    Network
+    Network,
+
   ]
 })
 export class AppModule {}
