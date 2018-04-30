@@ -23,7 +23,7 @@ import { GalleryPage } from "../pages/gallery/gallery";
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class BCqqApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage; // by default any is = HomePage; - using LoginPage for Authenticating root page

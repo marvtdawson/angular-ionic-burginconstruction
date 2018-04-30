@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from "@angular/http";
 import { Network } from "@ionic-native/network";
 
-import { MyApp } from './app.component';
+import { BCqqApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
@@ -41,7 +41,7 @@ import {AppHeaderPage} from "../pages/app-header/app-header";
 
 @NgModule({
   declarations: [
-    MyApp,
+    BCqqApp,
     HomePage,
     ListPage,
     AdminLoginPage,
@@ -68,12 +68,12 @@ import {AppHeaderPage} from "../pages/app-header/app-header";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(BCqqApp),
     HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    BCqqApp,
     HomePage,
     ListPage,
     AdminLoginPage,
