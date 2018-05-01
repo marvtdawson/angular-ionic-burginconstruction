@@ -4,6 +4,7 @@ import { MakeQuotesPage } from './make-quotes/make-quotes';
 import { QuotesProvider } from '../../providers/quotes/quotes';
 import { RepairServicesPage } from "./repair-services/repair-services";
 import { SiteDataProvider } from "../../providers/site-data/site-data";
+import { Remodel}
 
 @Component({
   selector: 'quotes',
@@ -15,6 +16,7 @@ export class QuotePage {
   siteName: string = this.siteData.siteName;
   appVersion: string = this.siteData.appVersion;
   pageTitle = 'Select A Project';
+  pushHomeRemodelPage = HomeRemodelPage;
 
   pushRepairServicesPage = RepairServicesPage;
 
