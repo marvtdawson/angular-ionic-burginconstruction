@@ -48,20 +48,19 @@ export class BCqqApp {
       {title: 'Services', component: ServicesPage},
       {title: 'Get Started', component: QuotePage},
       {title: 'Gallery', component: GalleryPage},
-      //{title: 'Sign Up', component: RegisterPage},,
       {title: 'Login', component: LoginPage},
       {title: 'Contact Us', component: ContactUsPage}
     ];
 
     this.presentLoading(); // show loader
 
-    this.auth.login().then((isLoggedIn) => {
-
-      if (isLoggedIn === true) {
-        this.rootPage = TabsPage;
-      } else {
-        this.rootPage = TabsPage;
-      }
+    this.auth.login()
+      .then((isLoggedIn) => {
+        if (isLoggedIn === true) {
+          this.rootPage = HomePage;
+        } else {
+          this.rootPage = TabsPage;
+        }
       this.loader.dismiss(); // remove loader
     });
 
@@ -74,12 +73,6 @@ export class BCqqApp {
     });
     this.loader.present();
   }
-
-  /*notARegisterMember() {
-    this.loader = this.loadingCtrl.create({
-      content: "Please Register"
-    })
-  }*/
 
   initializeApp() {
     this.platform.ready().then(() => {

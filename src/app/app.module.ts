@@ -3,13 +3,17 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpModule } from "@angular/http";
 import { Network } from "@ionic-native/network";
-
-import { BCqqApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+
+// Pages
+import { BCqqApp } from './app.component';
+import { AppHeaderPage } from "../pages/app-header/app-header";
+import { AppFooterPage } from "../pages/app-footer/app-footer";
+import { HomePage } from '../pages/home/home';
+import { AboutPage } from "../pages/corepages/about/about";
+import { TabsPage } from "../pages/tabs/tabs";
+import { ListPage } from '../pages/list/list';
 import { AdminLoginPage } from "../pages/admin-login/admin-login";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { ForgotPasswordPage } from "../pages/login/forgot-password/forgot-password";
@@ -24,19 +28,16 @@ import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { QuotePage } from "../pages/quotes/quotes";
 import { MembersettingsPage } from "../pages/members/membersettings/membersettings";
 import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile";
+import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
+import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
+import { ProjectsPage } from "../pages/projects/projects";
+import { ModalPage } from "../pages/modal/modal";
 
-
+// Provider - Services
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
-import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
-import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { ProjectsListService } from "../services/project-list";
 import { SiteDataProvider } from '../providers/site-data/site-data';
-import { TabsPage} from "../pages/tabs/tabs";
-import { ModalPage } from "../pages/modal/modal";
-import { ProjectsPage } from "../pages/projects/projects";
-import {AboutPage} from "../pages/corepages/about/about";
-import {AppHeaderPage} from "../pages/app-header/app-header";
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import {AppHeaderPage} from "../pages/app-header/app-header";
     ProjectsPage,
     AboutPage,
     AppHeaderPage,
+    AppFooterPage
   ],
   imports: [
     BrowserModule,
@@ -96,7 +98,8 @@ import {AppHeaderPage} from "../pages/app-header/app-header";
     ModalPage,
     ProjectsPage,
     AboutPage,
-    AppHeaderPage
+    AppHeaderPage,
+    AppFooterPage
   ],
   providers: [
     StatusBar,

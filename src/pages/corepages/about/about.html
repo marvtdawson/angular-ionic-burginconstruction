@@ -12,6 +12,7 @@
 
 <!-- display page content -->
 <ion-content padding>
+
   <div class="main-content">
     <h5>Our History</h5>
     <p>John Burgin's determination to build a legacy for his kids and grandchildren is atonishling!</p>
@@ -44,17 +45,7 @@
 
   </ion-item>
 
+  <!-- display page footer -->
+  <page-app-footer></page-app-footer>
+
 </ion-content>
-
-<ion-footer no-lines no-border>
-  <ion-toolbar position="bottom">
-    <!-- Advanced: explicity set the icon for each platform -->
-    <ion-icon ios="ios-settings" md="md-settings" class="footer-icon" [navPush]="pushMemberSettingsPage"></ion-icon>
-
-    <!-- Advanced: explicity set the icon for each platform -->
-    <ion-icon ios="ios-home" md="md-home" class="footer-icon" [navPush]="pushTabsPage"></ion-icon>
-
-    <!-- Advanced: explicity set the icon for each platform -->
-    <ion-icon ios="ios-contact" md="md-contact" class="footer-icon" [navPush]="pushMemberProfilePage"></ion-icon>
-  </ion-toolbar>
-</ion-footer>
