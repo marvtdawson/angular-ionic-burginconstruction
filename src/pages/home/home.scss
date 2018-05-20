@@ -1,5 +1,11 @@
 page-home {
 
+ion-tabs{
+  display: none;
+  visibility: hidden;
+}
+
+
   @media(max-width: 768px){
     .homeSlide_imgs{
       width: 100%;

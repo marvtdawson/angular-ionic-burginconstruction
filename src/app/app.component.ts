@@ -57,9 +57,9 @@ export class BCqqApp {
     this.auth.login()
       .then((isLoggedIn) => {
         if (isLoggedIn === true) {
-          this.rootPage = HomePage;
+          this.rootPage = AboutPage;
         } else {
-          this.rootPage = TabsPage;
+          this.rootPage = ContactUsPage;
         }
       this.loader.dismiss(); // remove loader
     });

@@ -1,48 +1,51 @@
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>{{ siteName }}</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header>-->
 
-<!-- display page content -->
-<ion-content>
-  <img class="homeSlide_imgs" src="../../assets/img/site/homePage_placeholder_1.jpg">
-  <div class="homeSlide-text">
-    <span>Same Home</span> <span class="homeSlide-text-two">NEW FEEL!</span>
-  </div>
+<!-- display page header -->
+<page-home></page-home>
 
-  <div class="main-content">
+  <!-- display page content -->
+  <ion-content>
+    <img class="homeSlide_imgs" src="../../assets/img/site/homePage_placeholder_1.jpg">
+    <div class="homeSlide-text">
+      <span>Same Home</span> <span class="homeSlide-text-two">NEW FEEL!</span>
+    </div>
 
-    <ion-list>
+    <div class="main-content">
 
-    <ion-list-header text-center>Projects</ion-list-header>
+      <ion-list>
 
-    <ion-item class="item-wrapper" *ngFor="let projs of projectInfo">
-      <ion-thumbnail class="home-page-thumbnail-img"  item-start>
-        <img (click)="presentProjectsInfoModal()"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
-      </ion-thumbnail>
-      <h2>{{ projs.title }}</h2>
-      <p>{{ projs.project_name }}</p>
-      <button ion-button clear item-end><img src="{{ projs.info_icon }}" alt=""></button>
-    </ion-item>
+      <ion-list-header text-center>Projects</ion-list-header>
 
-    <ion-list-header text-center>Services</ion-list-header>
+      <ion-item class="item-wrapper" *ngFor="let projs of projectInfo">
+        <ion-thumbnail class="home-page-thumbnail-img"  item-start>
+          <img (click)="presentProjectsInfoModal()"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
+        </ion-thumbnail>
+        <h2>{{ projs.title }}</h2>
+        <p>{{ projs.project_name }}</p>
+        <button ion-button clear item-end><img src="{{ projs.info_icon }}" alt=""></button>
+      </ion-item>
 
-    <ion-item class="item-wrapper" *ngFor="let servs of servicesInfo">
-      <ion-thumbnail class="home-page-thumbnail-img" item-start>
-        <img src="{{ servs.src }}" alt="">
-      </ion-thumbnail>
-      <h2>{{ servs.title }}</h2>
-      <button ion-button clear item-end><img src="{{ servs.service_icon }}"></button>
-    </ion-item>
-  </ion-list>
+      <ion-list-header text-center>Services</ion-list-header>
 
-  </div>
+      <ion-item class="item-wrapper" *ngFor="let servs of servicesInfo">
+        <ion-thumbnail class="home-page-thumbnail-img" item-start>
+          <img src="{{ servs.src }}" alt="">
+        </ion-thumbnail>
+        <h2>{{ servs.title }}</h2>
+        <button ion-button clear item-end><img src="{{ servs.service_icon }}"></button>
+      </ion-item>
+    </ion-list>
 
-  <!-- display page footer -->
-  <page-app-footer></page-app-footer>
+    </div>
+
+<!-- display page footer -->
+<page-app-footer></page-app-footer>
 
 </ion-content>
