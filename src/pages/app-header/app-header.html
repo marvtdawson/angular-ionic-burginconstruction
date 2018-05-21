@@ -3,6 +3,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{ pageTitle }}</ion-title>
+    <ion-title>
+      <div class="header-logo-wrapper" (click)="navigateToHomePage()">
+        <img class="header-logo" [src]="siteLogo">
+        <div class="header-site-name" color="primary">{{ siteName }}</div>
+      </div>
+    </ion-title>
+    <div class="desktop-nav-links-wrapper">
+      <ion-buttons>
+        <button ion-button outline color="light" clear [navPush]="pushAboutPage">ABOUT</button>
+        <button ion-button outline color="light" clear [navPush]="pushGalleryPage">GALLERY</button>
+        <button ion-button outline color="light" clear [navPush]="pushContactUsPage">CONTACT</button>
+        <button ion-button outline color="light" clear>(651) 353-6682</button>
+      </ion-buttons>
+    </div>
   </ion-navbar>
 </ion-header>

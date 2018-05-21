@@ -59,7 +59,7 @@ export class BCqqApp {
         if (isLoggedIn === true) {
           this.rootPage = AboutPage;
         } else {
-          this.rootPage = ContactUsPage;
+          this.rootPage = HomePage;
         }
       this.loader.dismiss(); // remove loader
     });

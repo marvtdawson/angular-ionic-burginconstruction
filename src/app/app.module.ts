@@ -32,6 +32,7 @@ import { RepairServicesPage } from "../pages/quotes/repair-services/repair-servi
 import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
 import { ProjectsPage } from "../pages/projects/projects";
 import { ModalPage } from "../pages/modal/modal";
+import {FinancePage} from "../pages/corepages/finance/finance";
 
 // Provider - Services
 import { AuthProvider } from '../providers/auth/auth';
@@ -66,7 +67,8 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     ProjectsPage,
     AboutPage,
     AppHeaderPage,
-    AppFooterPage
+    AppFooterPage,
+    FinancePage
   ],
   imports: [
     BrowserModule,
@@ -99,7 +101,8 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     ProjectsPage,
     AboutPage,
     AppHeaderPage,
-    AppFooterPage
+    AppFooterPage,
+    FinancePage
   ],
   providers: [
     StatusBar,

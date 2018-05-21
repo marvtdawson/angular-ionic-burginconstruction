@@ -1,17 +1,7 @@
 <page-app-header></page-app-header>
 
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{ pageTitle }}</ion-title>
-  </ion-navbar>
-</ion-header>
-
-
 <!-- display page content -->
-<ion-content padding>
+<ion-content>
 
   <div class="main-content">
     <h5>Our History</h5>
@@ -32,18 +22,17 @@
     <p>Minority Owned Business Council</p>
     <p>Twins Cities Miniority Association</p>
     <p>Duns & Brandstreet</p>
+
+    <ion-item class="about-para">
+      <p>Got some great news you would like to share with us. We love to hear all about it.</p>
+      <ion-buttons>
+        <button ion-button small [navPush]="pushContactPage">Contact Us</button>
+      </ion-buttons>
+    </ion-item>
+
   </div>
 
-  <ion-item class="about-para">
-    <p>Got some great news you would like to share with us. We love to hear all about it.</p>
-    <ion-buttons>
-      <button ion-button small [navPush]="pushContactPage">Contact Us</button>
-    </ion-buttons>
-  </ion-item>
 
-  <ion-item class="about-para">
-
-  </ion-item>
 
   <!-- display page footer -->
   <page-app-footer></page-app-footer>

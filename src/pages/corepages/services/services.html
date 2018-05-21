@@ -1,20 +1,14 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{ siteName }}</ion-title>
-  </ion-navbar>
-</ion-header>
+<page-app-header></page-app-header>
 
 <ion-content>
-  <div class="page-content-top">
-    <h1>{{ pageTitle }}</h1>
-    <p>Have a loose door knob, leaky faucet or a hole in the wall. Call us to fix minor repairs quickly.</p>
-    <h2>We specialize in:</h2>
-  </div>
 
+  <div class="main-content">
 
+    <div class="page-content-top">
+      <h1>{{ pageTitle }}</h1>
+      <p>Have a loose door knob, leaky faucet or a hole in the wall. Call us to fix minor repairs quickly.</p>
+      <h2>We specialize in:</h2>
+    </div>
 
    <ion-list>
     <ion-item class="item-wrapper" *ngFor="let servs of servicesList">
@@ -24,5 +18,9 @@
       </div>
     </ion-item>
   </ion-list>
+
+  </div>
+
+  <page-app-footer></page-app-footer>
 
 </ion-content>

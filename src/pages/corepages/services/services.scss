@@ -1,5 +1,16 @@
 services{
 
+  .main-content {
+    width: 60%;
+    margin: 100px auto 0;
+  }
+  .service-img {
+    width: 60%;
+    height: 320px;
+    margin: 0 auto 0;
+    padding: 0;
+  }
+
 
   @media(max-width: 768px) {
 

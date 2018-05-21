@@ -1,5 +1,18 @@
 contact-us{
 
+  .main-content {
+    width: 75%;
+    margin: 100px auto 0;
+  }
+  .card,
+  .card-md,
+  .card-ios{
+    width: 50%;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 3px #545454;
+    border-radius: 7px;
+    color: #000000;
+  }
   .form-page-logo-wrapper{
     margin: 0 auto 0;
     width: 150px;
@@ -9,6 +22,10 @@ contact-us{
   .form-page-logo{
     width: 150px;
     height: 150px;
+  }
+  .form-button-wrapper{
+    width: 50%;
+    margin: 0 auto 20px;
   }
 
 }

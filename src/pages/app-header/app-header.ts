@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SiteDataProvider} from "../../providers/site-data/site-data";
+import { HomePage } from "../home/home";
+import {AboutPage} from "../corepages/about/about";
+import {ContactUsPage} from "../corepages/contact-us/contact-us";
+import { GalleryPage } from "../gallery/gallery";
 
 /**
  * Generated class for the AppHeaderPage page.
@@ -15,7 +20,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AppHeaderPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  pushAboutPage = AboutPage;
+  pushGalleryPage = GalleryPage;
+  pushContactUsPage = ContactUsPage;
+
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              private siteData: SiteDataProvider) {
+  }
+  siteName = this.siteData.siteName;
+  siteLogo = this.siteData.siteLogo;
+
+  navigateToHomePage(){
+   this.navCtrl.popTo(HomePage);
   }
 
   ionViewDidLoad() {

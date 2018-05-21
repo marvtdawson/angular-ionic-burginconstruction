@@ -5,6 +5,20 @@ ion-tabs{
   visibility: hidden;
 }
 
+  .main-content{
+    width: 63%;
+    margin: 0 auto 0;
+  }
+  .homeSlide-text{
+    float: left;
+    width: 80%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 50px;
+    margin: -100px 0 0 40px;
+    position: relative;
+    z-index: 10;
+  }
 
   @media(max-width: 768px){
     .homeSlide_imgs{

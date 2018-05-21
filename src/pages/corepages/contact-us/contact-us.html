@@ -1,58 +1,60 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{ siteName }}</ion-title>
-  </ion-navbar>
-</ion-header>
+<page-app-header></page-app-header>
 
 <!-- display page content -->
-<ion-content padding>
-  <h1>{{ pageTitle }}</h1>
-  <div class="form-page-logo-wrapper">
-    <img class="form-page-logo" src="../../assets/img/logo/logo.png" alt="">
-  </div>
-    <ion-card>
-  <div class="page-content-top">
-    <p>
-      Let us know how we can improve our services, website, or mobile experience for you.
-    </p>
-  </div>
+<ion-content>
 
-  <form #contact="ngForm" (ngSubmit)="onSubmit(contact)">
+      <div class="main-content">
 
-    <ion-list>
-      <ion-item>
-        <ion-label floating>Name</ion-label>
-        <ion-input type="text" name="contName" required ngModel></ion-input>
-      </ion-item>
+        <h1>{{ pageTitle }}</h1>
+        <div class="form-page-logo-wrapper">
+          <img class="form-page-logo" src="../../assets/img/logo/logo.png" alt="">
+        </div>
+        <div class="page-content-top">
+          <p>
+            Let us know how we can improve our services, website, or mobile experience for you.
+          </p>
+        </div>
+        <ion-card>
 
-      <ion-item>
-        <ion-label floating>Email</ion-label>
-        <ion-input type="text" name="contEmail" required ngModel ></ion-input>
-      </ion-item>
+          <form #contact="ngForm" (ngSubmit)="onSubmit(contact)">
 
-      <ion-item>
-        <ion-label floating>State</ion-label>
-        <ion-input type="text" name="contState" required ngModel ></ion-input>
-      </ion-item>
+            <ion-list>
+        <ion-item>
+          <ion-label floating>Name</ion-label>
+          <ion-input type="text" name="contName" required ngModel></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label floating>City</ion-label>
-        <ion-input type="text" name="contCity" required ngModel ></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" name="contEmail" required ngModel ></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label floating>Message</ion-label>
-        <ion-textarea type="text" name="contMsg" required ngModel></ion-textarea>
-      </ion-item>
+        <ion-item>
+          <ion-label floating>State</ion-label>
+          <ion-input type="text" name="contState" required ngModel ></ion-input>
+        </ion-item>
 
-      <div class="form-button-wrapper">
-        <button ion-button color="primary" full [disabled]="!contact.valid">SEND</button>
+        <ion-item>
+          <ion-label floating>City</ion-label>
+          <ion-input type="text" name="contCity" required ngModel ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Message</ion-label>
+          <ion-textarea type="text" name="contMsg" required ngModel></ion-textarea>
+        </ion-item>
+
+        <div class="form-button-wrapper">
+          <button ion-button color="primary" full [disabled]="!contact.valid">SEND</button>
+        </div>
+      </ion-list>
+
+          </form>
+
+        </ion-card>
+
       </div>
-    </ion-list>
 
-  </form>
-  </ion-card>
+  <page-app-footer></page-app-footer>
+
 </ion-content>
