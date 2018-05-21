@@ -1,0 +1,85 @@
+<ion-footer>
+
+  <div class="footer">
+
+    <!--div class="social-icons-wrapper">
+      <ion-row>
+        <ion-col>
+          <ion-icon>
+            <a href="https://www.facebook.com/whoslaundry09" target="_blank">
+              <img src="../../assets/img/social-icons/icons8-facebook-filled-50.png" alt="">
+            </a>
+          </ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon>
+            <a href="https://www.instagram.com/whoslaundry09/" target="_blank">
+              <img src="../../assets/img/social-icons/icons8-instagram-filled-50.png" alt="">
+            </a>
+          </ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon>
+            <a href="https://www.linkedin.com/in/marvin-t-dawson-0b89a67/" target="_blank">
+              <img src="../../assets/img/social-icons/icons8-linkedin-filled-50.png" alt="">
+            </a>
+          </ion-icon>
+        </ion-col>
+
+        <ion-col>
+          <ion-icon>
+            <a href="https://twitter.com/whoslaundry09" target="_blank">
+              <img src="../../assets/img/social-icons/icons8-twitter-filled-50.png" alt="">
+            </a>
+          </ion-icon>
+        </ion-col>
+      </ion-row>
+    </div-->
+
+
+    <div class="row footer-wrapper">
+      <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+        <h3>DREAM HOME</h3>
+        <h6>Remodel Your:</h6>
+        <p>Roofing</p>
+        <p>Siding</p>
+        <p>Flooring</p>
+        <p>Basements</p>
+      </div> <hr class="footer-hr">
+
+      <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+        <h3>MAINTENANCE</h3>
+        <h6>Services:</h6>
+        <p>Handy Man Jobs</p>
+        <p>Drywall</p>
+        <p>Lighting</p>
+        <p>Fire Restoration</p>
+        <p></p>
+      </div><hr class="footer-hr">
+
+      <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
+        <h3>CONTACT</h3>
+        <h6>Clients:</h6>
+        <p>Gallery</p>
+        <p>History</p>
+        <p>Financing</p>
+        <p>24 Hour Service</p>
+      </div><hr class="footer-hr">
+
+    </div>
+
+    <ion-row class="footer-nav">
+      <ion-col [navPush]="pushAboutPage">ABOUT</ion-col>
+      <ion-col [navPush]="pushServicesPage">SERVICES</ion-col>
+      <ion-col [navPush]="pushFinancePage">FINANCE</ion-col>
+      <ion-col [navPush]="pushContactPage">CONTACT </ion-col>
+    </ion-row>
+    <div class="site-footer">
+      The {{ siteName }} {{ year }} site is a Progressive Web Site, designed using a Angular 5 / 6 & Ionic 3 / 4.  The site was developed by webmaster / software engineer
+      <a href="http://www.marvintdawson.com">Marvin Dawson</a>.
+    </div>
+
+  </div>
+
+</ion-footer>
+
