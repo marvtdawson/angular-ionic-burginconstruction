@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, Modal, ModalController, ModalOptions } from 'ionic-angular';
-import { ViewChild } from '@angular/core';
-import { Slides } from 'ionic-angular';
+import { Modal, ModalController, ModalOptions } from 'ionic-angular';
 import { SiteDataProvider } from "../../providers/site-data/site-data";
 import { ProjectsPage } from "../projects/projects";
-
 
 @Component({
   selector: 'page-home',
@@ -12,18 +9,11 @@ import { ProjectsPage } from "../projects/projects";
 })
 export class HomePage {
 
-  constructor(private navCtrl: NavController,
-              private siteData: SiteDataProvider,
+  constructor(private siteData: SiteDataProvider,
               private modalCtrl: ModalController) {}
 
   siteName = this.siteData.siteName;
   pageTitle = 'Home';
-
-  @ViewChild(Slides) slides: Slides;
-
-  goToSlide(){
-    this.slides.slideTo(2, 500);
-  }
 
   projectInfo = [
     {

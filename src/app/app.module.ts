@@ -24,7 +24,6 @@ import { GalleryPage } from "../pages/gallery/gallery";
 import { PrivatePolicyPage } from "../pages/corepages/private-policy/private-policy";
 import { ServicesPage } from "../pages/corepages/services/services";
 import { TermsAndConditionsPage } from "../pages/corepages/terms-and-conditions/terms-and-conditions";
-import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { QuotePage } from "../pages/quotes/quotes";
 import { MembersettingsPage } from "../pages/members/membersettings/membersettings";
 import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile";
@@ -32,7 +31,7 @@ import { RepairServicesPage } from "../pages/quotes/repair-services/repair-servi
 import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
 import { ProjectsPage } from "../pages/projects/projects";
 import { ModalPage } from "../pages/modal/modal";
-import {FinancePage} from "../pages/corepages/finance/finance";
+import { FinancePage} from "../pages/corepages/finance/finance";
 
 // Provider - Services
 import { AuthProvider } from '../providers/auth/auth';
@@ -56,7 +55,6 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     PrivatePolicyPage,
     ServicesPage,
     TermsAndConditionsPage,
-    SplashHomePage,
     QuotePage,
     MakeQuotesPage,
     RepairServicesPage,
@@ -90,7 +88,6 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     PrivatePolicyPage,
     ServicesPage,
     TermsAndConditionsPage,
-    SplashHomePage,
     QuotePage,
     MakeQuotesPage,
     RepairServicesPage,

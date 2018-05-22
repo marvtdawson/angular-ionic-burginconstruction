@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform, ModalController, LoadingController, ToastController } from 'ionic-angular';
+import { Nav, Platform, ModalController, LoadingController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SiteDataProvider } from "../providers/site-data/site-data"
@@ -7,7 +7,6 @@ import { SiteDataProvider } from "../providers/site-data/site-data"
 
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from "../pages/login/login";
-import { SplashHomePage } from "../pages/splash-home/splash-home";
 import { AuthProvider } from "../providers/auth/auth";
 import { QuotePage } from "../pages/quotes/quotes";
 //import { RegisterPage } from "../pages/register/register";
@@ -37,7 +36,6 @@ export class BCqqApp {
               public modalCtrl: ModalController,
               public auth: AuthProvider,
               public loadingCtrl: LoadingController,
-              private toastCtrl: ToastController,
               public siteData: SiteDataProvider) {
     this.initializeApp();
 
