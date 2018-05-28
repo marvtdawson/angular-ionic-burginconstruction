@@ -29,6 +29,9 @@ plugins/ios.json
 www/
 $RECYCLE.BIN/
 src/app/app-firebase-config.ts
+bcqq.apk
+BurginConstruction.apk
+burginConstruction.jks
 
 .DS_Store
 Thumbs.db
