@@ -23,18 +23,18 @@
 
       <ion-list-header text-center>Projects</ion-list-header>
 
-      <ion-item class="item-wrapper" *ngFor="let projs of projectInfo">
+      <ion-item class="item-wrapper" *ngFor="let projs of projects">
         <ion-thumbnail class="home-page-thumbnail-img"  item-start>
           <img (click)="presentProjectsInfoModal()"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
         </ion-thumbnail>
-        <h2>{{ projs.title }}</h2>
+        <h2>{{ projs.customer }}</h2>
         <p>{{ projs.project_name }}</p>
         <button ion-button clear item-end><img src="{{ projs.info_icon }}" alt=""></button>
       </ion-item>
 
       <ion-list-header text-center>Services</ion-list-header>
 
-      <ion-item class="item-wrapper" *ngFor="let servs of servicesInfo">
+      <ion-item class="item-wrapper" *ngFor="let servs of services">
         <ion-thumbnail class="home-page-thumbnail-img" item-start>
           <img src="{{ servs.src }}" alt="">
         </ion-thumbnail>

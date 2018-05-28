@@ -5,6 +5,11 @@ import { HttpModule } from "@angular/http";
 import { Network } from "@ionic-native/network";
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabase } from "angularfire2/database-deprecated";
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FIREBASE_CONFIG } from "./app-firebase-config";
 
 // Pages
 import { BCqqApp } from './app.component';
@@ -71,7 +76,10 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
   imports: [
     BrowserModule,
     IonicModule.forRoot(BCqqApp),
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -110,6 +118,7 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     ProjectsListService,
     SiteDataProvider,
     Network,
+    AngularFireDatabase
 
   ]
 })

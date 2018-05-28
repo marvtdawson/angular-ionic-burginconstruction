@@ -9,6 +9,8 @@ import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 })
 export class ProjectsPage {
 
+
+
   constructor(private navParams: NavParams,
               private viewCtrl: ViewController) {
   }
@@ -18,7 +20,7 @@ export class ProjectsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProjectsPage');
+    console.log();
   }
 
 }
