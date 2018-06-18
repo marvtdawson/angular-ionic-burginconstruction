@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {AboutPage} from "../corepages/about/about";
-import {ServicesPage} from "../corepages/services/services";
-import {ContactUsPage} from "../corepages/contact-us/contact-us";
-import {FinancePage} from "../corepages/finance/finance";
+import {AboutPage} from "../../pages/corepages/about/about";
+import {ServicesPage} from "../../pages/corepages/services/services";
+import {ContactUsPage} from "../../pages/corepages/contact-us/contact-us";
+import {FinancePage} from "../../pages/corepages/finance/finance";
 
 
 @IonicPage()

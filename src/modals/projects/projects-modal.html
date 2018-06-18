@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ customer }} Project</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card padding>
+    <ion-card-title>{{ project_name }}</ion-card-title>
+    <img src="{{ src }}" alt="{{ img_alt }}">
+    <ion-card-content text-center>
+      <h2>QUICK SUMMARY:</h2>
+      <p>{{ quick_summary }}</p>
+      <h2>RESOLUTION:</h2>
+      <p>{{ project_resolution }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

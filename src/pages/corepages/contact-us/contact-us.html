@@ -17,38 +17,36 @@
         <ion-card>
 
           <form #contact="ngForm" (ngSubmit)="onSubmit(contact)">
-
             <ion-list>
-        <ion-item>
-          <ion-label floating>Name</ion-label>
-          <ion-input type="text" name="contName" required ngModel></ion-input>
-        </ion-item>
+              <ion-item>
+                <ion-label floating>Name</ion-label>
+                <ion-input type="text" name="contName" required ngModel></ion-input>
+              </ion-item>
 
-        <ion-item>
-          <ion-label floating>Email</ion-label>
-          <ion-input type="text" name="contEmail" required ngModel ></ion-input>
-        </ion-item>
+              <ion-item>
+                <ion-label floating>Email</ion-label>
+                <ion-input type="text" name="contEmail" required ngModel ></ion-input>
+              </ion-item>
 
-        <ion-item>
-          <ion-label floating>State</ion-label>
-          <ion-input type="text" name="contState" required ngModel ></ion-input>
-        </ion-item>
+              <ion-item>
+                <ion-label floating>State</ion-label>
+                <ion-input type="text" name="contState" required ngModel ></ion-input>
+              </ion-item>
 
-        <ion-item>
-          <ion-label floating>City</ion-label>
-          <ion-input type="text" name="contCity" required ngModel ></ion-input>
-        </ion-item>
+              <ion-item>
+                <ion-label floating>City</ion-label>
+                <ion-input type="text" name="contCity" required ngModel ></ion-input>
+              </ion-item>
 
-        <ion-item>
-          <ion-label floating>Message</ion-label>
-          <ion-textarea type="text" name="contMsg" required ngModel></ion-textarea>
-        </ion-item>
+              <ion-item>
+                <ion-label floating>Message</ion-label>
+                <ion-textarea type="text" name="contMsg" required ngModel></ion-textarea>
+              </ion-item>
 
-        <div class="form-button-wrapper">
-          <button ion-button color="primary" full [disabled]="!contact.valid">SEND</button>
-        </div>
-      </ion-list>
-
+              <div class="form-button-wrapper">
+                <button ion-button color="primary" full [disabled]="!contact.valid">SEND</button>
+              </div>
+            </ion-list>
           </form>
 
         </ion-card>

@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Modal, ModalController, ModalOptions } from 'ionic-angular';
 import { SiteDataProvider } from "../../providers/site-data/site-data";
-import { ProjectsPage } from "../projects/projects";
-import { ProjectsInterface } from "../../data/projects.interface";
-//import project from '../../data/projects';
-import { PROJECTS } from '../../data/projects';
-import { SERVICES } from "../../data/services";
+import { Projects } from "../../models/projects/projects.interface";
+import { PROJECTS } from '../../mock-data/projects';
+import { SERVICES } from "../../mock-data/services";
+import { ProjectsModal } from "../../modals/projects/projects-modal";
 
 @Component({
   selector: 'page-home',
@@ -19,10 +18,8 @@ export class HomePage implements OnInit{
   siteName = this.siteData.siteName;
   pageTitle = 'Home';
 
-  //projectsCollection: {project: ProjectsInterface[]}[];
   projects = PROJECTS;
   services = SERVICES;
-
 
   ngOnInit(){
     console.log(this.projects);
@@ -30,22 +27,19 @@ export class HomePage implements OnInit{
     console.log(this.projectsCollection);*/
   }
 
-  presentProjectsInfoModal(){
-
+  presentProjectsInfoModal(project: Projects){
     const projectsModalOption: ModalOptions = {
-      enableBackdropDismiss: false
+        enableBackdropDismiss: false
     };
 
-   /* const projectModal: Modal = this.modalCtrl.create(ProjectsPage,
-      {data: this.projectsCollection},
-      projectsModalOption);
+    const projectModal: Modal = this.modalCtrl.create(ProjectsModal, project, projectsModalOption);
     projectModal.present();
 
-    projectModal.onDidDismiss((data) => {
-      console.log(data);
-    })
-    */
-  }
+     /* projectModal.onDidDismiss((data) => {
+        console.log(data);
+      })
+      */
+    }
 
 
 }

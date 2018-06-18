@@ -13,13 +13,12 @@ import { FIREBASE_CONFIG } from "./app-firebase-config";
 
 // Pages
 import { BCqqApp } from './app.component';
-import { AppHeaderPage } from "../pages/app-header/app-header";
-import { AppFooterPage } from "../pages/app-footer/app-footer";
+import { AppHeaderPage } from "./app-header/app-header";
+import { AppFooterPage } from "./app-footer/app-footer";
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from "../pages/corepages/about/about";
 import { TabsPage } from "../pages/tabs/tabs";
 import { ListPage } from '../pages/list/list';
-import { AdminLoginPage } from "../pages/admin-login/admin-login";
 import { ContactUsPage } from "../pages/corepages/contact-us/contact-us";
 import { ForgotPasswordPage } from "../pages/login/forgot-password/forgot-password";
 import { LoginPage } from "../pages/login/login";
@@ -34,15 +33,20 @@ import { MembersettingsPage } from "../pages/members/membersettings/membersettin
 import { MemberprofilePage } from "../pages/members/memberprofile/memberprofile";
 import { RepairServicesPage } from "../pages/quotes/repair-services/repair-services";
 import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
-import { ProjectsPage } from "../pages/projects/projects";
-import { ModalPage } from "../pages/modal/modal";
 import { FinancePage} from "../pages/corepages/finance/finance";
+import { RequestQuotePage } from "../pages/quotes/request-quote/request-quote";
 
-// Provider - Services
+// Modals
+import { ProjectsModal } from "../modals/projects/projects-modal";
+import { ServicesModal } from "../modals/services-list/services-modal";
+
+// Providers
 import { AuthProvider } from '../providers/auth/auth';
 import { QuotesProvider } from '../providers/quotes/quotes';
-import { ProjectsListService } from "../services/project-list";
 import { SiteDataProvider } from '../providers/site-data/site-data';
+
+// Services
+import { ProjectsListService } from "../services/project-list";
 
 
 @NgModule({
@@ -50,7 +54,6 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     BCqqApp,
     HomePage,
     ListPage,
-    AdminLoginPage,
     ContactUsPage,
     ForgotPasswordPage,
     LoginPage,
@@ -66,12 +69,13 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     MemberprofilePage,
     MembersettingsPage,
     TabsPage,
-    ModalPage,
-    ProjectsPage,
+    ServicesModal,
+    ProjectsModal,
     AboutPage,
     AppHeaderPage,
     AppFooterPage,
-    FinancePage
+    FinancePage,
+    RequestQuotePage
   ],
   imports: [
     BrowserModule,
@@ -86,7 +90,6 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     BCqqApp,
     HomePage,
     ListPage,
-    AdminLoginPage,
     ContactUsPage,
     ForgotPasswordPage,
     LoginPage,
@@ -102,12 +105,13 @@ import { SiteDataProvider } from '../providers/site-data/site-data';
     MemberprofilePage,
     MembersettingsPage,
     TabsPage,
-    ModalPage,
-    ProjectsPage,
+    ServicesModal,
+    ProjectsModal,
     AboutPage,
     AppHeaderPage,
     AppFooterPage,
-    FinancePage
+    FinancePage,
+    RequestQuotePage
   ],
   providers: [
     StatusBar,

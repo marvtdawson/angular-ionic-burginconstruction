@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {SiteDataProvider} from "../../providers/site-data/site-data";
-import { HomePage } from "../home/home";
-import {AboutPage} from "../corepages/about/about";
-import {ContactUsPage} from "../corepages/contact-us/contact-us";
-import { GalleryPage } from "../gallery/gallery";
+import { SiteDataProvider} from "../../providers/site-data/site-data";
+
+import { HomePage } from "../../pages/home/home";
+import { AboutPage} from "../../pages/corepages/about/about";
+import { ContactUsPage} from "../../pages/corepages/contact-us/contact-us";
+import { RequestQuotePage} from "../../pages/quotes/request-quote/request-quote";
 
 /**
  * Generated class for the AppHeaderPage page.
@@ -21,7 +22,7 @@ import { GalleryPage } from "../gallery/gallery";
 export class AppHeaderPage {
 
   pushAboutPage = AboutPage;
-  pushGalleryPage = GalleryPage;
+  pushRequestQuotePage = RequestQuotePage;
   pushContactUsPage = ContactUsPage;
 
   constructor(public navCtrl: NavController,

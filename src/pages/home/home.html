@@ -1,12 +1,3 @@
-<!--<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{ siteName }}</ion-title>
-  </ion-navbar>
-</ion-header>-->
-
 <!-- display page header -->
 <page-app-header></page-app-header>
 
@@ -25,7 +16,7 @@
 
       <ion-item class="item-wrapper" *ngFor="let projs of projects">
         <ion-thumbnail class="home-page-thumbnail-img"  item-start>
-          <img (click)="presentProjectsInfoModal()"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
+          <img (click)="presentProjectsInfoModal(projs)"  src="{{ projs.src }}" alt="{{ projs.img_alt }}">
         </ion-thumbnail>
         <h2>{{ projs.customer }}</h2>
         <p>{{ projs.project_name }}</p>

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { SiteDataProvider } from "../../../providers/site-data/site-data"
-import {SERVICES} from "../../../data/services";
+import {SERVICES} from "../../../mock-data/services";
 
 @Component({
   selector: 'services',

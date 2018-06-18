@@ -15,11 +15,11 @@
       Sign up and start enjoying the convenience of {{ siteName }} services.
     </p>
   </div>
-  <form #register="ngForm" (ngSubmit)="onSubmit(register)">
+  <form #register="ngForm">
     <ion-list inset>
       <ion-item>
         <ion-label for="regName" floating>First Name</ion-label>
-        <ion-input type="text" name="regFName"  id="regFName" required ngModel></ion-input>
+        <ion-input type="test" name="regFName"  id="regFName" required ngModel></ion-input>
       </ion-item>
 
       <ion-item>
@@ -29,17 +29,12 @@
 
       <ion-item>
         <ion-label floating>Email</ion-label>
-        <ion-input type="text" name="regEmail_1" required ngModel></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label floating>Confirm Email</ion-label>
-        <ion-input type="text" name="regEmail_2" required ngModel></ion-input>
+        <ion-input type="email" name="regEmail_1" required [(ngModel)]="userAccount.email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Password</ion-label>
-        <ion-input type="password" name="regPw" required ngModel></ion-input>
+        <ion-input type="password" name="regPw" required [(ngModel)]="userAccount.password"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -48,7 +43,7 @@
       </ion-item>
 
       <div class="form-button-wrapper">
-        <button ion-button color="primary" block [disabled]="!register.valid">Register</button>
+        <button ion-button color="primary" block [disabled]="!register.valid" (click)="onRegister()">Register</button>
       </div>
 
     </ion-list>
