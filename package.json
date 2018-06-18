@@ -56,6 +56,7 @@
         "ionicons": "3.0.0",
         "moment": "^2.18.1",
         "mongoose": "^4.11.9",
+        "nodemailer": "^4.6.7",
         "npm": "^6.0.0",
         "phonegap-plugin-local-notification": "git+https://github.com/phonegap/phonegap-plugin-local-notification.git",
         "phonegap-plugin-push": "^1.10.5",
