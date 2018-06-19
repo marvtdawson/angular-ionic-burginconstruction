@@ -41,7 +41,7 @@
       <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
         <h3>DREAM HOME</h3>
         <h6>Remodel Your:</h6>
-        <p>Roofing</p>
+        <p>Lighting</p>
         <p>Siding</p>
         <p>Flooring</p>
         <p>Basements</p>
@@ -50,9 +50,9 @@
       <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
         <h3>MAINTENANCE</h3>
         <h6>Services:</h6>
-        <p>Handy Man Jobs</p>
+        <p>Quick Jobs</p>
         <p>Drywall</p>
-        <p>Lighting</p>
+        <p>Roofing</p>
         <p>Fire Restoration</p>
         <p></p>
       </div><hr class="footer-hr">
@@ -60,9 +60,9 @@
       <div class="col-sm-4 col-md-4 widget footer-nav-subdiv">
         <h3>CONTACT</h3>
         <h6>Clients:</h6>
-        <p>Gallery</p>
+        <p [navPush]="pushGalleryPage">Gallery</p>
         <p>History</p>
-        <p>Financing</p>
+        <p [navPush]="pushFinancePage">Financing</p>
         <p>24 Hour Service</p>
       </div><hr class="footer-hr">
 
@@ -71,10 +71,11 @@
     <ion-row class="footer-nav">
       <ion-col [navPush]="pushAboutPage">ABOUT</ion-col>
       <ion-col [navPush]="pushServicesPage">SERVICES</ion-col>
-      <ion-col [navPush]="pushFinancePage">FINANCE</ion-col>
+      <ion-col [navPush]="pushCustomerLogin">PAYMENT</ion-col>
       <ion-col [navPush]="pushContactPage">CONTACT </ion-col>
     </ion-row>
     <div class="site-footer">
+      <p><a [navPush]="pushAdminLoginPage">{{ siteName }}</a> is a privately owned company.</p>
       The {{ siteName }} {{ year }} site is a Progressive Web Site, designed using a Angular 5 / 6 & Ionic 3 / 4.  The site was developed by webmaster / software engineer
       <a href="http://www.marvintdawson.com">Marvin Dawson</a>.
     </div>

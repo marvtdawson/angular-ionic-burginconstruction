@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from "ionic-angular";
 import { ContactUsPage } from '../contact-us/contact-us';
 import {SiteDataProvider} from "../../../providers/site-data/site-data";
+import {TeamBurginPage} from "../team-burgin/team-burgin";
 
 
 @Component({
@@ -18,4 +19,5 @@ export class AboutPage {
 
   pageTitle: string = 'About';
   pushContactPage = ContactUsPage;
+  pushTeamBurgin = TeamBurginPage;
 }

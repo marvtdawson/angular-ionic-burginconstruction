@@ -35,6 +35,7 @@ import { RepairServicesPage } from "../pages/quotes/repair-services/repair-servi
 import { MakeQuotesPage } from "../pages/quotes/make-quotes/make-quotes";
 import { FinancePage} from "../pages/corepages/finance/finance";
 import { RequestQuotePage } from "../pages/quotes/request-quote/request-quote";
+import { AdminLoginPage } from "../pages/auth/admin-login/admin-login";
 
 // Modals
 import { ProjectsModal } from "../modals/projects/projects-modal";
@@ -75,7 +76,8 @@ import { ProjectsListService } from "../services/project-list";
     AppHeaderPage,
     AppFooterPage,
     FinancePage,
-    RequestQuotePage
+    RequestQuotePage,
+    AdminLoginPage
   ],
   imports: [
     BrowserModule,
@@ -111,7 +113,8 @@ import { ProjectsListService } from "../services/project-list";
     AppHeaderPage,
     AppFooterPage,
     FinancePage,
-    RequestQuotePage
+    RequestQuotePage,
+    AdminLoginPage
   ],
   providers: [
     StatusBar,
